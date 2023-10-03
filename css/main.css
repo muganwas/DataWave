@@ -1,0 +1,53 @@
+:root {
+	--Purple: #7a14ff;
+	--Black: #1e1e1e;
+}
+a:link {
+	color: var(--Black);
+}
+a:hover {
+	color: var(--Purple);
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	margin-top: 41px;
+	margin-left: 101px;
+	margin-right: 313px;
+	justify-content: space-between;
+	align-items: center;
+	#logo {
+		font-family: Poppins;
+		font-size: 34px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		#mind {
+			color: black;
+		}
+		#azzle {
+			color: var(--Purple);
+		}
+	}
+	#links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 381px;
+		height: 24px;
+		.link-container {
+			.link {
+				font-family: Poppins;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				text-decoration: none;
+			}
+			.link.active {
+				color: var(--Purple);
+			}
+		}
+	}
+}
