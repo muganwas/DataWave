@@ -1,53 +1,19 @@
 :root {
 	--Purple: #7a14ff;
 	--Black: #1e1e1e;
+	--Gray: #808086;
 }
-a:link {
-	color: var(--Black);
-}
-a:hover {
-	color: var(--Purple);
-}
-nav {
+body {
+	background-image: url('../images/home_background.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
 	display: flex;
-	flex-direction: row;
-	margin-top: 41px;
-	margin-left: 101px;
-	margin-right: 313px;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	#logo {
-		font-family: Poppins;
-		font-size: 34px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		#mind {
-			color: black;
-		}
-		#azzle {
-			color: var(--Purple);
-		}
-	}
-	#links {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		width: 381px;
-		height: 24px;
-		.link-container {
-			.link {
-				font-family: Poppins;
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: normal;
-				text-decoration: none;
-			}
-			.link.active {
-				color: var(--Purple);
-			}
-		}
-	}
+}
+main {
+	width: 1920px;
+	height: 7224px;
+	background-color: transparent;
+	overflow: hidden;
 }

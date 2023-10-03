@@ -1,5 +1,190 @@
-body {
-	background-image: url('../images/home_background.svg');
-	background-repeat: no-repeat;
-	background-size: cover;
+a:link {
+	color: var(--Black);
+}
+a:hover {
+	color: var(--Purple);
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	margin-top: 41px;
+	margin-left: 101px;
+	margin-right: 313px;
+	justify-content: space-between;
+	align-items: center;
+	#logo {
+		font-family: Poppins;
+		font-size: 34px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		#mind {
+			color: black;
+		}
+		#azzle {
+			color: var(--Purple);
+		}
+	}
+	#links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 381px;
+		height: 24px;
+		.link-container {
+			.link {
+				font-family: Poppins;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				text-decoration: none;
+			}
+			.link.active {
+				color: var(--Purple);
+			}
+		}
+	}
+}
+.call-to-action-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 86px;
+	align-items: center;
+	height: 700px;
+	.call-to-action {
+		display: flex;
+		flex-direction: column;
+		margin-left: 193px;
+		width: 634px;
+		.welcome-msg {
+			color: var(--Purple);
+			font-family: Poppins;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 115%; /* 20.7px */
+			letter-spacing: -0.36px;
+			#app-name {
+				font-family: Poppins;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 115%;
+				letter-spacing: -0.36px;
+			}
+		}
+		.call-to-action-title {
+			color: var(--Black);
+			font-family: Poppins;
+			font-size: 70px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 115%; /* 80.5px */
+			letter-spacing: -1.4px;
+			width: 555px;
+			margin-top: 14px;
+		}
+		.call-to-action-desc {
+			display: flex;
+			flex-shrink: 0;
+			color: var(---Gray);
+			font-family: Poppins;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 168.5%; /* 26.96px */
+			letter-spacing: -0.64px;
+			margin-top: 25px;
+		}
+		.call-to-action-buttons {
+			display: flex;
+			margin-top: 46px;
+			align-items: center;
+			.ios-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 257px;
+				height: 64px;
+				flex-shrink: 0;
+				border-radius: 31px;
+				background: var(--Purple);
+				color: #fff;
+				font-family: Poppins;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 115%; /* 23px */
+				letter-spacing: -0.4px;
+				cursor: pointer;
+				#apple-icon {
+					width: 19px;
+					height: 22px;
+					flex-shrink: 0;
+					margin-top: 20px;
+					margin-bottom: 22px;
+				}
+				#apple-download-text {
+					margin-left: 8px;
+				}
+			}
+			.android-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 311px;
+				height: 64px;
+				flex-shrink: 0;
+				border-radius: 31px;
+				border: 3px solid var(--Purple);
+				color: var(--Purple, #7a14ff);
+				font-family: Poppins;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 115%; /* 23px */
+				letter-spacing: -0.4px;
+				margin-left: 20px;
+				cursor: pointer;
+				#play-store-icon {
+					width: 22px;
+					height: 24px;
+					flex-shrink: 0;
+				}
+				#android-download-text {
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+	.game-illustrations {
+		display: flex;
+		position: relative;
+		width: 910px;
+		height: 868px;
+		.game-two-container {
+			position: absolute;
+			width: 844.234px;
+			height: 933.033px;
+			left: -160px;
+			flex-shrink: 0;
+			background-image: url('../images/phone-2.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.game-one-container {
+			position: absolute;
+			width: 910px;
+			height: 868px;
+			left: 334px;
+			top: 100px;
+			flex-shrink: 0;
+			transform: rotate(50deg);
+			background-image: url('../images/phone-1.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
 }
