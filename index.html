@@ -3,28 +3,29 @@
 <head>
     <title>DataWave</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/home.css" />
 </head>
 
 <body>
     <main>
         <nav>
-            <span id="logo">
-                <span id="mind">Mind</span><span id="azzle">azzle</span>
-            </span>
-            <div id="links">
-                <span class="link-container">
-                    <a class="link" href="#">Home</a>
+            <div class="nav-sub-container">
+                <span id="logo">
+                    <span id="mind">Mind</span><span id="azzle">azzle</span>
                 </span>
-                <span class="link-container">
-                    <a class="link" href="#">About Us</a>
-                </span>
-                <span class="link-container">
-                    <a class="link" href="#">Features</a>
-                </span>
-                <span class="link-container">
-                    <a class="link" href="#">Contact</a>
-                </span>
+                <div id="links">
+                    <span class="link-container">
+                        <a class="link" href="#">Home</a>
+                    </span>
+                    <span class="link-container">
+                        <a class="link" href="#">About Us</a>
+                    </span>
+                    <span class="link-container">
+                        <a class="link" href="#">Features</a>
+                    </span>
+                    <span class="link-container">
+                        <a class="link" href="#">Contact</a>
+                    </span>
+                </div>
             </div>
         </nav>
         <div class="call-to-action-container">
@@ -43,11 +44,9 @@
                 </span>
                 <div class="call-to-action-buttons">
                     <span class="ios-button">
-                        <img id="apple-icon" alt="apple icon" src="./images/apple_icon.svg" />
                         <span id="apple-download-text">Download for iOS</span>
                     </span>
                     <span class="android-button">
-                        <img id="play-store-icon" alt="play store icon" src="./images/play_store_icon.svg" />
                         <span id="android-download-text">Download for Android</span>
                     </span>
                 </div>
@@ -59,8 +58,97 @@
                 </div>
             </div>
         </div>
+        <div class="stats-container">
+            <span class="stats-header">Numbers Speaks Everythinks</span>
+            <div class="stats">
+                <span class="stats-category" id="downloads">
+                    <span class="stats-digit">4292</span>
+                    <span class="stats-label">Downloads</span>
+                </span>
+                <span class="stats-category" id="likes">
+                    <span class="stats-digit">6583</span>
+                    <span class="stats-label">Likes</span>
+                </span>
+                <span class="stats-category" id="ratings">
+                    <span class="stats-digit">2599</span>
+                    <span class="stats-label">5 Star Ratings</span>
+                </span>
+                <span class="stats-category" id="awards">
+                    <span class="stats-digit">599</span>
+                    <span class="stats-label">Awards</span>
+                </span>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio-header">
+                <span id="portfolio-title">Our Games</span>
+                <span id="portfolio-title-desc">
+                    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                    day, going forward, a
+                    new normal that streamlined cloud solution.
+                </span>
+            </div>
+            <div class="portfolio-slider">
+                <span class="slider-nav-button" id="left-nav-button"></span>
+                <div id="slides" class="slides">
+                    <div class="slide-container">
+                        <div class="portfolio-slide-layover"></div>
+                        <div id="slippys-bubble" class="portfolio-slide">
+                            <div class="slide-image-container">
+                                <div id="slippys-bubble-image" class="slide-image"></div>
+                            </div>
+                            <div class="slide-title">
+                                Slippy's Bubble Adventure
+                            </div>
+                            <div class="game-desc">
+                                Slippy's Bubble Adventure in the same color to pop and drop colorful balls. Explore
+                                mysterious
+                                levels
+                            </div>
+                            <span class="read-more">Explore</span>
+                        </div>
+                        <div class="portfolio-slide-shadow"></div>
+                    </div>
+                    <div class="slide-container active">
+                        <div class="portfolio-slide-layover"></div>
+                        <div id="donut-match" class="portfolio-slide active">
+                            <div class="slide-image-container">
+                                <div id="donut-match-image" class="slide-image"></div>
+                            </div>
+                            <div class="slide-title">
+                                Donut Match 3 : Puzzle
+                            </div>
+                            <div class="game-desc">
+                                Looking for fun match 3 games?, Welcome to Donut mania an amazing matching game
+                            </div>
+                            <span class="read-more">Explore</span>
+                        </div>
+                        <div class="portfolio-slide-shadow"></div>
+                    </div>
+                    <div class="slide-container">
+                        <div class="portfolio-slide-layover"></div>
+                        <div id="juice-ninja-saga" class="portfolio-slide">
+                            <div class="slide-image-container">
+                                <div id="juice-ninja-saga-image" class="slide-image"></div>
+                            </div>
+                            <div class="slide-title">
+                                Juice Ninja Saga
+                            </div>
+                            <div class="game-desc">
+                                Juice Ninja Saga is the most popular fruit puzzle game!
+                                There are mysterious fruits portals
+                            </div>
+                            <span class="read-more">Explore</span>
+                        </div>
+                        <div class="portfolio-slide-shadow"></div>
+                    </div>
+                </div>
+                <span class="slider-nav-button" id="right-nav-button"></span>
+            </div>
+        </div>
     </main>
     <!--Load last-->
+    <script src="./scripts/nav.js"></script>
     <script src="./scripts/slider.js"></script>
 </body>
 

@@ -1,8 +1,13 @@
+@import url('./home.css');
+@import url('./portfolio-slider.css');
+
 :root {
 	--Purple: #7a14ff;
 	--Black: #1e1e1e;
 	--Gray: #808086;
+	--White: #ffffff;
 }
+
 body {
 	background-image: url('../images/home_background.svg');
 	background-repeat: no-repeat;
@@ -12,8 +17,13 @@ body {
 	align-items: center;
 }
 main {
+	display: flex;
+	flex-direction: column;
 	width: 1920px;
 	height: 7224px;
 	background-color: transparent;
 	overflow: hidden;
+}
+.hidden {
+	display: none;
 }

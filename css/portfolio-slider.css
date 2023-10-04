@@ -1,0 +1,156 @@
+.portfolio-slider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.slider-nav-button {
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+		cursor: pointer;
+	}
+	#left-nav-button {
+		background-image: url('../images/play.svg');
+		transform: rotate(180deg);
+	}
+	#right-nav-button {
+		background-image: url('../images/play.svg');
+	}
+	.slides {
+		display: flex;
+		.slide-container {
+			display: flex;
+			position: relative;
+			margin-right: 78px;
+			width: 388px;
+			height: 465px;
+			flex-shrink: 0;
+			.portfolio-slide {
+				display: flex;
+				position: absolute;
+				z-index: 10;
+				flex-direction: column;
+				align-items: center;
+				flex-shrink: 0;
+				width: 388px;
+				height: 465px;
+				border-radius: 20px;
+				border: 1px solid #ccc;
+				background-color: var(--White);
+				border-radius: 20px;
+				box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+				.slide-image-container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 264.247px;
+					flex-shrink: 0;
+					border-bottom: solid 0.508px var(--Black);
+					padding-bottom: 4.5px;
+					margin-bottom: 30px;
+					.slide-image {
+						width: 223px;
+						height: 160px;
+						flex-shrink: 0;
+						margin-top: 51px;
+						padding-bottom: 4.5px;
+						background-repeat: no-repeat;
+					}
+					#slippys-bubble-image {
+						background-image: url('../images/slippys_bubble.png');
+					}
+					#donut-match-image {
+						background-image: url('../images/donut_match.png');
+					}
+					#juice-ninja-saga-image {
+						background-image: url('../images/juice_ninja_saga.png');
+					}
+				}
+				.slide-title {
+					color: var(--Black);
+					text-align: center;
+					font-family: Poppins;
+					font-size: 30px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 115%; /* 34.5px */
+					letter-spacing: -0.6px;
+				}
+				.game-desc {
+					width: 286px;
+					color: var(--Gray);
+					text-align: center;
+					font-family: Poppins;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 168.5%; /* 26.96px */
+					letter-spacing: -0.64px;
+					margin-bottom: 14px;
+				}
+				.read-more {
+					color: var(--Black);
+					text-align: center;
+					font-family: Poppins;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 115%; /* 18.4px */
+					letter-spacing: -0.32px;
+					cursor: pointer;
+				}
+			}
+			.portfolio-slide-shadow {
+				position: absolute;
+				display: block;
+				bottom: -7px;
+				z-index: 1;
+				width: 388px;
+				height: 465px;
+				flex-shrink: 0;
+				border-radius: 20px;
+				background: var(--Black);
+				box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+			}
+			.portfolio-slide-layover {
+				position: absolute;
+				display: block;
+				z-index: 15;
+				width: 388px;
+				height: 465px;
+				flex-shrink: 0;
+				border-radius: 20px;
+				background: rgba(255, 255, 255, 0.15);
+				backdrop-filter: blur(2px);
+				box-shadow: 0px 4px 5px 0px rgba(255, 255, 255, 0.15);
+			}
+			.portfolio-slide.active {
+				.slide-title {
+					color: var(--Purple);
+				}
+				.read-more {
+					color: var(--Purple);
+				}
+			}
+		}
+		.slide-container.active {
+			.portfolio-slide-shadow {
+				position: absolute;
+				display: block;
+				bottom: -10px;
+				z-index: 1;
+				width: 388px;
+				height: 465px;
+				flex-shrink: 0;
+				border-radius: 20px;
+				background: var(--Purple);
+				box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+			}
+			.portfolio-slide-layover {
+				display: none;
+			}
+		}
+		.slide-container:last-of-type {
+			margin-right: 0px;
+		}
+	}
+}

@@ -6,43 +6,50 @@ a:hover {
 }
 nav {
 	display: flex;
-	flex-direction: row;
-	margin-top: 41px;
-	margin-left: 101px;
-	margin-right: 313px;
-	justify-content: space-between;
-	align-items: center;
-	#logo {
-		font-family: Poppins;
-		font-size: 34px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		#mind {
-			color: black;
-		}
-		#azzle {
-			color: var(--Purple);
-		}
-	}
-	#links {
+	flex-direction: column;
+	.nav-sub-container {
 		display: flex;
 		flex-direction: row;
+		width: 1506px;
+		height: 51px;
+		flex-shrink: 0;
+		margin-top: 41px;
+		margin-left: 101px;
+		margin-right: 313px;
 		justify-content: space-between;
 		align-items: center;
-		width: 381px;
-		height: 24px;
-		.link-container {
-			.link {
-				font-family: Poppins;
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: normal;
-				text-decoration: none;
+		#logo {
+			font-family: Poppins;
+			font-size: 34px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			#mind {
+				color: black;
 			}
-			.link.active {
+			#azzle {
 				color: var(--Purple);
+			}
+		}
+		#links {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 381px;
+			height: 24px;
+			.link-container {
+				.link {
+					font-family: Poppins;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					text-decoration: none;
+				}
+				.link.active {
+					color: var(--Purple);
+				}
 			}
 		}
 	}
@@ -51,12 +58,13 @@ nav {
 	display: flex;
 	flex-direction: row;
 	margin-top: 86px;
+	margin-left: 193px;
 	align-items: center;
 	height: 700px;
+	margin-bottom: 300px;
 	.call-to-action {
 		display: flex;
 		flex-direction: column;
-		margin-left: 193px;
 		width: 634px;
 		.welcome-msg {
 			color: var(--Purple);
@@ -104,13 +112,15 @@ nav {
 			align-items: center;
 			.ios-button {
 				display: flex;
-				justify-content: center;
 				align-items: center;
 				width: 257px;
 				height: 64px;
 				flex-shrink: 0;
 				border-radius: 31px;
-				background: var(--Purple);
+				background-color: var(--Purple);
+				background-image: url('../images/apple_icon.svg');
+				background-position: 30px 18px;
+				background-repeat: no-repeat;
 				color: #fff;
 				font-family: Poppins;
 				font-size: 20px;
@@ -119,20 +129,12 @@ nav {
 				line-height: 115%; /* 23px */
 				letter-spacing: -0.4px;
 				cursor: pointer;
-				#apple-icon {
-					width: 19px;
-					height: 22px;
-					flex-shrink: 0;
-					margin-top: 20px;
-					margin-bottom: 22px;
-				}
 				#apple-download-text {
-					margin-left: 8px;
+					margin-left: 59px;
 				}
 			}
 			.android-button {
 				display: flex;
-				justify-content: center;
 				align-items: center;
 				width: 311px;
 				height: 64px;
@@ -140,6 +142,9 @@ nav {
 				border-radius: 31px;
 				border: 3px solid var(--Purple);
 				color: var(--Purple, #7a14ff);
+				background-image: url('../images/play_store_icon.svg');
+				background-position: 35px 20px;
+				background-repeat: no-repeat;
 				font-family: Poppins;
 				font-size: 20px;
 				font-style: normal;
@@ -148,13 +153,8 @@ nav {
 				letter-spacing: -0.4px;
 				margin-left: 20px;
 				cursor: pointer;
-				#play-store-icon {
-					width: 22px;
-					height: 24px;
-					flex-shrink: 0;
-				}
 				#android-download-text {
-					margin-left: 8px;
+					margin-left: 65px;
 				}
 			}
 		}
@@ -185,6 +185,95 @@ nav {
 			background-image: url('../images/phone-1.png');
 			background-size: cover;
 			background-repeat: no-repeat;
+		}
+	}
+}
+.stats-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 179px;
+	.stats-header {
+		display: flex;
+		color: var(--Purple);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 115%; /* 25.3px */
+		margin-bottom: 74px;
+	}
+	.stats {
+		display: flex;
+		flex-direction: row;
+		.stats-category {
+			display: flex;
+			flex-direction: column;
+			padding: 20px 94px;
+			border-right: solid 1px var(--Gray);
+			.stats-digit {
+				color: var(--Black);
+				text-align: center;
+				font-family: Poppins;
+				font-size: 60px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 115%; /* 69px */
+				letter-spacing: -1.2px;
+			}
+			.stats-label {
+				color: var(--Gray);
+				text-align: center;
+				font-family: Poppins;
+				font-size: 22px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 115%; /* 25.3px */
+				letter-spacing: -0.44px;
+			}
+		}
+		.stats-category:last-of-type {
+			border-right: none;
+		}
+	}
+}
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	width: 1434px;
+	height: 647.001px;
+	margin-left: 235px;
+	flex-shrink: 0;
+	.portfolio-header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 27px;
+		#portfolio-title {
+			color: var(--Black);
+			text-align: center;
+			font-family: Poppins;
+			font-size: 60px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 115%; /* 69px */
+			letter-spacing: -1.2px;
+			margin-bottom: 17px;
+		}
+		#portfolio-title-desc {
+			width: 796px;
+			color: var(--Gray);
+			text-align: center;
+			font-family: Poppins;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 168.5%; /* 26.96px */
+			letter-spacing: -0.64px;
 		}
 	}
 }
