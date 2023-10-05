@@ -1,6 +1,7 @@
 (function (doc) {
     const back = doc.getElementById('left-nav-button');
     const next = doc.getElementById('right-nav-button');
+    const articles = doc.getElementsByClassName('article');
     back.addEventListener('click', function (e) {
         e.preventDefault();
         const parent = doc.getElementById('slides');
@@ -30,7 +31,6 @@
     });
     next.addEventListener('click', function (e) {
         e.preventDefault();
-        const parent = doc.getElementById('slides');
         const slideContainers = doc.getElementsByClassName('slide-container');
         for (let i = 0; i < slideContainers.length; i++) {
             const slideContainer = slideContainers[i];
@@ -57,6 +57,14 @@
             }
         }
     });
+    for (let i = 0; i < articles.length; i++) {
+        const article = articles[i];
+        article.addEventListener('click', function (e) {
+            e.preventDefault();
+            Array.from(articles).forEach(at => at.classList.remove('active'));
+            article.classList.add('active');
+        });
+    }
 
 })(document);
 function insertAfter(newNode, existingNode) {

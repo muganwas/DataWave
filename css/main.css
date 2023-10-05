@@ -5,6 +5,7 @@
 	--Purple: #7a14ff;
 	--Black: #1e1e1e;
 	--Gray: #808086;
+	--LGray: #d4d4d4;
 	--White: #ffffff;
 }
 
@@ -13,14 +14,15 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	padding: 0;
+	margin: 0;
 }
 main {
 	display: flex;
 	flex-direction: column;
 	width: 1920px;
-	height: 7224px;
 	background-color: transparent;
 	overflow: hidden;
 }
