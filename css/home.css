@@ -277,3 +277,192 @@ nav {
 		}
 	}
 }
+.about {
+	display: flex;
+	flex-direction: row;
+	height: 1106px;
+	align-items: center;
+	flex-shrink: 0;
+	margin-left: 197px;
+	.about-text-container {
+		flex: 1;
+		#about-title-text {
+			display: flex;
+			color: var(--Purple);
+			font-family: Poppins;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 115%; /* 20.7px */
+			letter-spacing: -0.36px;
+			margin-bottom: 100px;
+		}
+		.about-desc {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 119px;
+			#about-desc-title {
+				display: block;
+				color: var(--Black);
+				text-transform: uppercase;
+				font-family: Poppins;
+				width: 814px;
+				margin-bottom: 16px;
+				font-size: 60px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 115%; /* 69px */
+				letter-spacing: -1.2px;
+			}
+			#about-desc-text {
+				display: block;
+				width: 661px;
+				color: var(--Gray);
+				font-family: Poppins;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 168.5%; /* 26.96px */
+				letter-spacing: -0.64px;
+			}
+		}
+		#about-more {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 200px;
+			height: 64px;
+			flex-shrink: 0;
+			border-radius: 31px;
+			background: var(--Purple);
+			cursor: pointer;
+			#about-more-text {
+				color: var(--White);
+				font-family: Poppins;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 115%; /* 23px */
+				letter-spacing: -0.4px;
+			}
+		}
+	}
+	.about-graphic-container {
+		position: relative;
+		width: 986px;
+		height: 986px;
+		flex-shrink: 0;
+		.about-graphic {
+			position: absolute;
+			z-index: 10;
+			display: flex;
+			width: 986px;
+			height: 986px;
+			flex-shrink: 0;
+			background-image: url('../images/about-graphic.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+		.about-graphic-background {
+			position: absolute;
+			display: flex;
+			z-index: 1;
+			width: 938px;
+			height: 938px;
+			flex-shrink: 0;
+			background-image: url('../images/rings.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+}
+.game-play-container {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	justify-content: center;
+	align-items: center;
+	#game-play-section-title {
+		color: var(--Purple);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 115%; /* 20.7px */
+		letter-spacing: -0.36px;
+		margin-bottom: 16px;
+	}
+	#game-play-section-sub-title {
+		color: var(--Black);
+		text-align: center;
+		font-family: Poppins;
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 115%; /* 69px */
+		letter-spacing: -1.2px;
+		margin-bottom: 77px;
+	}
+	.screens-container {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		width: 1368px;
+		height: 916.356px;
+		.game-screen {
+			display: flex;
+			position: absolute;
+			flex-shrink: 0;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#screen-one {
+			width: 394.951px;
+			height: 792.356px;
+			flex-shrink: 0;
+			z-index: 1;
+			background-image: url('../images/game_play_1.png');
+			left: 0px;
+			top: 102px;
+		}
+		#screen-two {
+			width: 401px;
+			height: 795px;
+			flex-shrink: 0;
+			z-index: 5;
+			background-image: url('../images/game_play_2.png');
+			left: 273px;
+			top: 51px;
+		}
+		#screen-three {
+			width: 385px;
+			height: 811px;
+			flex-shrink: 0;
+			z-index: 10;
+			background-image: url('../images/game_play_3.png');
+			left: 474px;
+			top: 0;
+		}
+		#screen-four {
+			width: 365px;
+			height: 799px;
+			flex-shrink: 0;
+			z-index: 5;
+			background-image: url('../images/game_play_4.png');
+			left: 768px;
+			top: 51px;
+		}
+		#screen-five {
+			width: 356.469px;
+			height: 797.569px;
+			flex-shrink: 0;
+			z-index: 1;
+			background-image: url('../images/game_play_5.png');
+			left: 1011px;
+			top: 102px;
+		}
+	}
+}
