@@ -20,15 +20,13 @@ a:hover {
 nav {
 	display: flex;
 	flex-direction: column;
+	margin-top: 41px;
+	margin-left: 101px;
+	margin-right: 313px;
 	.nav-sub-container {
 		display: flex;
 		flex-direction: row;
-		width: 1506px;
-		height: 51px;
 		flex-shrink: 0;
-		margin-top: 41px;
-		margin-left: 101px;
-		margin-right: 313px;
 		justify-content: space-between;
 		align-items: center;
 		#links {
@@ -121,7 +119,7 @@ nav {
 				background-image: url('../images/apple_icon.svg');
 				background-position: 30px 18px;
 				background-repeat: no-repeat;
-				color: #fff;
+				color: var(--White);
 				font-family: Poppins;
 				font-size: 20px;
 				font-style: normal;
@@ -141,7 +139,7 @@ nav {
 				flex-shrink: 0;
 				border-radius: 31px;
 				border: 3px solid var(--Purple);
-				color: var(--Purple, #7a14ff);
+				color: var(--Purple);
 				background-image: url('../images/play_store_icon.svg');
 				background-position: 35px 20px;
 				background-repeat: no-repeat;
@@ -622,9 +620,9 @@ nav {
 	}
 }
 footer {
+	flex: 0 0 100%;
 	display: flex;
 	flex-direction: column;
-	height: 464px;
 	background: var(--Black);
 	color: var(--White);
 	.footer-top {
@@ -770,6 +768,109 @@ footer {
 			font-style: normal;
 			font-weight: 500;
 			line-height: 256%; /* 40.96px */
+		}
+	}
+}
+
+@media screen {
+	@media (max-width: 1919px) {
+		nav {
+			margin-top: 41px;
+			margin-left: 0px;
+			margin-right: 0px;
+			.nav-sub-container {
+				margin: 0 5%;
+			}
+		}
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				margin-bottom: 10px;
+				.call-to-action {
+					width: 40%;
+					.call-to-action-title {
+						font-size: 55px;
+						width: 100%;
+					}
+					.call-to-action-desc {
+						font-size: 15px;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					width: 60%;
+					height: 708px;
+					.game-two-container {
+						width: 650px;
+						height: 780px;
+						background-size: contain;
+						left: -120px;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 600px;
+						height: 830px;
+						left: 140px;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+			.stats-container {
+				.stats {
+					.stats-category {
+						padding: 20px 80px;
+						.stats-digit {
+							font-size: 55px;
+						}
+						.stats-label {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			.portfolio {
+				width: 90%;
+				height: 647.001px;
+				margin: 0 5%;
+				flex-shrink: 0;
+				.portfolio-header {
+					margin-bottom: 27px;
+					#portfolio-title {
+						font-size: 55px;
+						margin-bottom: 17px;
+					}
+					#portfolio-title-desc {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		footer {
 		}
 	}
 }
