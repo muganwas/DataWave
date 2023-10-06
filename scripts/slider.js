@@ -2,6 +2,7 @@
     const back = doc.getElementById('left-nav-button');
     const next = doc.getElementById('right-nav-button');
     const articles = doc.getElementsByClassName('article');
+    const slides = doc.getElementsByClassName('slide-container');
     back.addEventListener('click', function (e) {
         e.preventDefault();
         const parent = doc.getElementById('slides');
@@ -63,6 +64,26 @@
             e.preventDefault();
             Array.from(articles).forEach(at => at.classList.remove('active'));
             article.classList.add('active');
+        });
+    }
+    for (let i = 0; i < slides.length; i++) {
+        const slide = slides[i];
+        slide.addEventListener('click', function (e) {
+            e.preventDefault();
+            Array.from(slides).forEach(sl => {
+                sl.classList.remove('active');
+                Array.from(sl.children).forEach(sl => {
+                    if (sl.classList.contains('portfolio-slide')) {
+                        sl.classList.remove('active');
+                    }
+                });
+            });
+            slide.classList.add('active');
+            Array.from(slide.children).forEach(sl => {
+                if (sl.classList.contains('portfolio-slide')) {
+                    sl.classList.add('active');
+                }
+            });
         });
     }
 

@@ -211,4 +211,160 @@
 			}
 		}
 	}
+	@media (max-width: 1250px) {
+		.portfolio-slider {
+			.slides {
+				.slide-container {
+					display: flex;
+					position: relative;
+					margin-right: 2%;
+					flex: 1;
+					/* width: 320px;*/
+					height: 435px;
+					flex-shrink: 0;
+					.portfolio-slide {
+						flex: 1;
+						height: 435px;
+						border: 1px solid #ccc;
+						background-color: var(--White);
+						border-radius: 20px;
+						//box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+						.slide-image-container {
+							width: 250px;
+							margin-bottom: 20px;
+							.slide-image {
+								margin-top: 40px;
+							}
+						}
+						.slide-title {
+							font-size: 20px;
+							padding: 0 2%;
+							margin-bottom: 14px;
+						}
+						.game-desc {
+							font-size: 14px;
+							padding: 0 5%;
+						}
+						.read-more {
+							font-size: 16px;
+						}
+					}
+					.portfolio-slide-shadow {
+						flex: 1;
+						height: 435px;
+					}
+					.portfolio-slide-layover {
+						flex: 1;
+						height: 435px;
+					}
+				}
+				.slide-container.active {
+					.portfolio-slide-shadow {
+						flex: 1;
+						height: 435px;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1124px) {
+		.portfolio-slider {
+			width: 100%;
+			.slider-nav-button {
+				display: none;
+			}
+			.slides {
+				width: 100%;
+				justify-content: space-between;
+				.slide-container {
+					display: flex;
+					position: relative;
+					margin-right: 2%;
+					flex: none;
+					width: 388px;
+					/* width: 320px;*/
+					height: 435px;
+					flex-shrink: 0;
+					.portfolio-slide {
+						flex: 1;
+						width: 388px;
+						height: 435px;
+						border: 1px solid #ccc;
+						background-color: var(--White);
+						border-radius: 20px;
+						//box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+						.slide-image-container {
+							width: 250px;
+							margin-bottom: 20px;
+							.slide-image {
+								margin-top: 40px;
+							}
+						}
+						.slide-title {
+							font-size: 20px;
+							padding: 0 2%;
+							margin-bottom: 14px;
+						}
+						.game-desc {
+							font-size: 14px;
+							padding: 0 5%;
+						}
+						.read-more {
+							font-size: 16px;
+						}
+					}
+					.portfolio-slide-shadow {
+						flex: 1;
+						height: 435px;
+					}
+					.portfolio-slide-layover {
+						flex: 1;
+						height: 435px;
+					}
+				}
+				.slide-container.active {
+					display: block;
+					position: absolute;
+					z-index: 100;
+					margin: 0 25%;
+					width: 450px;
+					height: 435px;
+					flex-shrink: 0;
+					.portfolio-slide {
+						flex: 1;
+						width: 450px;
+						height: 435px;
+						border: 1px solid #ccc;
+						background-color: var(--White);
+						border-radius: 20px;
+						//box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+						.slide-image-container {
+							width: 250px;
+							margin-bottom: 20px;
+							.slide-image {
+								margin-top: 40px;
+							}
+						}
+						.slide-title {
+							font-size: 20px;
+							padding: 0 2%;
+							margin-bottom: 14px;
+						}
+						.game-desc {
+							font-size: 14px;
+							padding: 0 5%;
+						}
+						.read-more {
+							font-size: 16px;
+						}
+					}
+					.portfolio-slide-shadow {
+						flex: 1;
+						width: 450px;
+						height: 435px;
+					}
+				}
+			}
+		}
+	}
 }

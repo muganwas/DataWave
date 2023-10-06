@@ -140,6 +140,7 @@ nav {
 				border-radius: 31px;
 				border: 3px solid var(--Purple);
 				color: var(--Purple);
+				background-color: var(--White);
 				background-image: url('../images/play_store_icon.svg');
 				background-position: 35px 20px;
 				background-repeat: no-repeat;
@@ -332,6 +333,7 @@ nav {
 			height: 64px;
 			flex-shrink: 0;
 			border-radius: 31px;
+			margin-left: 142px;
 			background: var(--Purple);
 			cursor: pointer;
 			#about-more-text {
@@ -382,7 +384,7 @@ nav {
 	flex-shrink: 0;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 146px;
+	margin-bottom: 147px;
 	#game-play-section-title {
 		color: var(--Purple);
 		text-align: center;
@@ -544,7 +546,7 @@ nav {
 					flex-shrink: 0;
 					border-radius: 31px;
 					background: var(--Purple);
-					color: #fff;
+					color: var(--White);
 					text-align: center;
 					font-family: Roboto;
 					font-size: 20px;
@@ -642,6 +644,9 @@ footer {
 			flex-shrink: 0;
 			.logo {
 				margin-bottom: 26px;
+				.mind {
+					color: var(--White);
+				}
 			}
 			#footer-mission-statement {
 				color: var(--LGray);
@@ -785,7 +790,7 @@ footer {
 		main {
 			.call-to-action-container {
 				margin-left: 10%;
-				margin-bottom: 10px;
+				margin-bottom: 80px;
 				.call-to-action {
 					width: 40%;
 					.call-to-action-title {
@@ -869,8 +874,1065 @@ footer {
 					}
 				}
 			}
+			.about {
+				height: 1106px;
+				margin-left: 10%;
+				.about-text-container {
+					flex: 1;
+					width: 50%;
+					#about-title-text {
+						font-size: 18px;
+						margin-bottom: 100px;
+					}
+					.about-desc {
+						display: flex;
+						flex-direction: column;
+						margin-bottom: 119px;
+						#about-desc-title {
+							width: 100%;
+							margin-bottom: 16px;
+							font-size: 55px;
+						}
+						#about-desc-text {
+							width: 661px;
+							font-size: 16px;
+						}
+					}
+					#about-more {
+						width: 150px;
+						height: 50px;
+						margin-left: 10%;
+						border-radius: 31px;
+						#about-more-text {
+							font-size: 16px;
+						}
+					}
+				}
+				.about-graphic-container {
+					width: 50%;
+					height: 800px;
+					.about-graphic {
+						width: 100%;
+						height: 100%;
+						background-size: cover;
+					}
+					.about-graphic-background {
+						width: 95%;
+						height: 95%;
+						background-size: cover;
+					}
+				}
+			}
+			.game-play-container {
+				margin: 0 5%;
+				margin-bottom: 147px;
+				#game-play-section-title {
+					font-size: 18px;
+					margin-bottom: 16px;
+				}
+				#game-play-section-sub-title {
+					font-size: 55px;
+					margin-bottom: 77px;
+				}
+				.screens-container {
+					width: 100%;
+					height: 800px;
+					.game-screen {
+					}
+					#screen-one {
+						//display: none;
+					}
+					#screen-five {
+						//display:none;
+					}
+				}
+			}
+			.blog-section {
+				width: 90%;
+				margin: 0 5%;
+				margin-bottom: 79px;
+				#blog-section-title {
+					font-size: 18px;
+					margin-bottom: 14px;
+				}
+				#blog-section-subtitle {
+					font-size: 55px;
+					margin-bottom: 17px;
+				}
+				#blog-section-desc {
+					width: 70%;
+					height: 69px;
+					font-size: 16px;
+					margin-bottom: 77px;
+				}
+				.recent-blog-articles-container {
+					width: 100%;
+					.article {
+						width: 636px;
+						height: 640px;
+						border-radius: 20px;
+						.article-featured-image {
+							width: 636px;
+							height: 300px;
+							border-radius: 20px 20px 0px 0px;
+							margin-bottom: 60px;
+							.article-date {
+								top: 276.91px;
+								left: 51px;
+								width: 169.877px;
+								height: 43.938px;
+								border-radius: 31px;
+								font-size: 20px;
+							}
+						}
+						.article-text-container {
+							padding-left: 51px;
+							.article-title {
+								width: 438px;
+								height: 75px;
+								font-size: 30px;
+								margin-bottom: 17px;
+							}
+							.article-snippet {
+								width: 519px;
+								height: 83px;
+								color: var(--Gray);
+								font-size: 16px;
+								margin-bottom: 33.71px;
+							}
+							.article-read-more {
+								width: 105.655px;
+								height: 17.371px;
+								font-size: 16px;
+							}
+						}
+						.article-shadow {
+							border-radius: 20px;
+							border: 1px solid #ccc;
+							bottom: -4px;
+							box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+						}
+					}
+					.article.active {
+						.article-shadow {
+							z-index: -1;
+						}
+					}
+				}
+			}
 		}
 		footer {
+			flex: 0 0 100%;
+			.footer-top {
+				height: 355px;
+				margin: 82px 10% 0;
+				.mindazzle-footer-sect {
+					display: flex;
+					flex-direction: column;
+					width: 341px;
+					height: 126px;
+					flex-shrink: 0;
+					.logo {
+						margin-bottom: 26px;
+					}
+					#footer-mission-statement {
+						font-size: 16px;
+						margin-bottom: 24px;
+					}
+					.socials {
+						width: 244px;
+						height: 46px;
+						#combined-socials {
+							width: 244px;
+							height: 46px;
+						}
+						#facebook {
+						}
+						#twitter {
+						}
+						#pinterest {
+						}
+						#instagram {
+						}
+					}
+				}
+				.useful-links {
+					width: 160px;
+					margin-left: 200px;
+					#useful-links-title {
+						font-size: 20px;
+					}
+					.footer-link-container {
+						.footer-link {
+							font-size: 16px;
+						}
+					}
+				}
+				.support-links {
+					width: 160px;
+					margin-left: 99px;
+					#support-links-title {
+						font-size: 20px;
+					}
+					.footer-link-container {
+						.footer-link {
+							font-size: 16px;
+						}
+					}
+				}
+				.footer-contact-info {
+					width: 214px;
+					margin-left: 147px;
+					#footer-contact-info-title {
+						font-size: 20px;
+					}
+					.contact-info {
+						font-size: 16px;
+					}
+				}
+			}
+			.footer-bottom {
+				display: flex;
+				justify-content: center;
+				margin: 0 10% 15px;
+				#copy-right {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	@media (max-width: 1490px) {
+		nav {
+			margin-top: 41px;
+			margin-left: 0px;
+			margin-right: 0px;
+			.nav-sub-container {
+				margin: 0 5%;
+			}
+		}
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 40%;
+					.call-to-action-title {
+						font-size: 55px;
+						width: 100%;
+					}
+					.call-to-action-desc {
+						font-size: 15px;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					width: 60%;
+					height: 708px;
+					.game-two-container {
+						width: 650px;
+						height: 780px;
+						background-size: contain;
+						left: -120px;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 600px;
+						height: 830px;
+						left: 140px;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+			.stats-container {
+				.stats {
+					.stats-category {
+						padding: 20px 80px;
+						.stats-digit {
+							font-size: 55px;
+						}
+						.stats-label {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			.portfolio {
+				width: 90%;
+				height: 647.001px;
+				margin: 0 5%;
+				flex-shrink: 0;
+				.portfolio-header {
+					margin-bottom: 27px;
+					#portfolio-title {
+						font-size: 55px;
+						margin-bottom: 17px;
+					}
+					#portfolio-title-desc {
+						font-size: 16px;
+					}
+				}
+			}
+			.about {
+				height: 1106px;
+				margin-left: 10%;
+				.about-text-container {
+					flex: 1;
+					width: 50%;
+					#about-title-text {
+						font-size: 18px;
+						margin-bottom: 100px;
+					}
+					.about-desc {
+						display: flex;
+						flex-direction: column;
+						margin-bottom: 119px;
+						#about-desc-title {
+							width: 100%;
+							margin-bottom: 16px;
+							font-size: 55px;
+						}
+						#about-desc-text {
+							width: 80%;
+							height: auto;
+							font-size: 16px;
+						}
+					}
+					#about-more {
+						width: 150px;
+						height: 50px;
+						margin-left: 10%;
+						border-radius: 31px;
+						#about-more-text {
+							font-size: 16px;
+						}
+					}
+				}
+				.about-graphic-container {
+					width: 50%;
+					height: 800px;
+					.about-graphic {
+						width: 100%;
+						height: 100%;
+						background-size: cover;
+					}
+					.about-graphic-background {
+						width: 95%;
+						height: 95%;
+						background-size: cover;
+					}
+				}
+			}
+			.game-play-container {
+				margin: 0 5%;
+				margin-bottom: 147px;
+				#game-play-section-title {
+					font-size: 18px;
+					margin-bottom: 16px;
+				}
+				#game-play-section-sub-title {
+					font-size: 55px;
+					margin-bottom: 77px;
+				}
+				.screens-container {
+					width: 100%;
+					height: 800px;
+					.game-screen {
+					}
+					#screen-one {
+						display: none;
+					}
+					#screen-two {
+						left: 10%;
+						top: 51px;
+					}
+					#screen-three {
+						left: 35%;
+						top: 0;
+					}
+					#screen-four {
+						left: auto;
+						right: 10%;
+						top: 51px;
+					}
+					#screen-five {
+						display: none;
+					}
+				}
+			}
+			.blog-section {
+				width: 90%;
+				margin: 0 5%;
+				margin-bottom: 79px;
+				#blog-section-title {
+					font-size: 18px;
+					margin-bottom: 14px;
+				}
+				#blog-section-subtitle {
+					font-size: 55px;
+					margin-bottom: 17px;
+				}
+				#blog-section-desc {
+					width: 70%;
+					height: 69px;
+					font-size: 16px;
+					margin-bottom: 77px;
+				}
+				.recent-blog-articles-container {
+					width: 100%;
+					.article {
+						width: 636px;
+						height: 640px;
+						border-radius: 20px;
+						.article-featured-image {
+							width: 636px;
+							height: 300px;
+							border-radius: 20px 20px 0px 0px;
+							margin-bottom: 60px;
+							.article-date {
+								top: 276.91px;
+								left: 51px;
+								width: 169.877px;
+								height: 43.938px;
+								border-radius: 31px;
+								font-size: 20px;
+							}
+						}
+						.article-text-container {
+							padding-left: 51px;
+							.article-title {
+								width: 438px;
+								height: 75px;
+								font-size: 30px;
+								margin-bottom: 17px;
+							}
+							.article-snippet {
+								width: 519px;
+								height: 83px;
+								color: var(--Gray);
+								font-size: 16px;
+								margin-bottom: 33.71px;
+							}
+							.article-read-more {
+								width: 105.655px;
+								height: 17.371px;
+								font-size: 16px;
+							}
+						}
+						.article-shadow {
+							border-radius: 20px;
+							border: 1px solid #ccc;
+							bottom: -4px;
+							box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+						}
+					}
+					.article.active {
+						.article-shadow {
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+		footer {
+			flex: 0 0 100%;
+			.footer-top {
+				height: 355px;
+				margin: 82px 10% 0;
+				.mindazzle-footer-sect {
+					display: flex;
+					flex-direction: column;
+					flex: 3;
+					height: 126px;
+					flex-shrink: 0;
+					.logo {
+						margin-bottom: 26px;
+					}
+					#footer-mission-statement {
+						font-size: 16px;
+						margin-bottom: 24px;
+					}
+					.socials {
+						width: 244px;
+						height: 46px;
+						#combined-socials {
+							width: 244px;
+							height: 46px;
+						}
+						#facebook {
+						}
+						#twitter {
+						}
+						#pinterest {
+						}
+						#instagram {
+						}
+					}
+				}
+				.useful-links {
+					flex: 2;
+					margin-left: 5%;
+					#useful-links-title {
+						font-size: 20px;
+					}
+					.footer-link-container {
+						.footer-link {
+							font-size: 16px;
+						}
+					}
+				}
+				.support-links {
+					flex: 2;
+					width: 160px;
+					margin-left: 5%;
+					#support-links-title {
+						font-size: 20px;
+					}
+					.footer-link-container {
+						.footer-link {
+							font-size: 16px;
+						}
+					}
+				}
+				.footer-contact-info {
+					flex: 2;
+					margin-left: 5%;
+					#footer-contact-info-title {
+						font-size: 20px;
+					}
+					.contact-info {
+						font-size: 16px;
+					}
+				}
+			}
+			.footer-bottom {
+				display: flex;
+				justify-content: center;
+				margin: 0 10% 15px;
+				#copy-right {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	@media (max-width: 1450px) {
+		main {
+			.blog-section {
+				width: 90%;
+				margin: 0 5%;
+				margin-bottom: 79px;
+				#blog-section-title {
+					font-size: 18px;
+					margin-bottom: 14px;
+				}
+				#blog-section-subtitle {
+					font-size: 55px;
+					margin-bottom: 17px;
+				}
+				#blog-section-desc {
+					width: 70%;
+					height: 69px;
+					font-size: 16px;
+					margin-bottom: 77px;
+				}
+				.recent-blog-articles-container {
+					width: 100%;
+					justify-content: space-between;
+					.article {
+						width: 48%;
+						height: auto;
+						border-radius: 20px;
+						padding: 0 0 50px 0;
+						.article-featured-image {
+							width: 100%;
+							height: 300px;
+							border-radius: 20px 20px 0px 0px;
+							margin-bottom: 60px;
+							.article-date {
+								top: 276.91px;
+								left: 51px;
+								width: 169.877px;
+								height: 43.938px;
+								border-radius: 31px;
+								font-size: 20px;
+							}
+						}
+						.article-text-container {
+							padding: 0 5%;
+							.article-title {
+								width: 100%;
+								height: auto;
+								font-size: 30px;
+								margin-bottom: 17px;
+							}
+							.article-snippet {
+								width: 100%;
+								height: auto;
+								color: var(--Gray);
+								font-size: 16px;
+								margin-bottom: 33.71px;
+							}
+							.article-read-more {
+								width: 105.655px;
+								height: 17.371px;
+								font-size: 16px;
+							}
+						}
+						.article-shadow {
+							border-radius: 20px;
+							border: 1px solid #ccc;
+							bottom: -4px;
+							box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+						}
+					}
+					.article.active {
+						.article-shadow {
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1350px) {
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 40%;
+					.call-to-action-title {
+						font-size: 55px;
+						width: 100%;
+					}
+					.call-to-action-desc {
+						font-size: 15px;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					width: 60%;
+					height: 708px;
+					.game-two-container {
+						width: 90%;
+						height: 600px;
+						background-size: contain;
+						left: -20%;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 90%;
+						height: 650px;
+						left: 20%;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1250px) {
+		main {
+			.portfolio {
+				width: 95%;
+				height: 647.001px;
+				margin: 0 2.5%;
+				flex-shrink: 0;
+				.portfolio-header {
+					margin-bottom: 27px;
+					#portfolio-title {
+						font-size: 55px;
+						margin-bottom: 17px;
+					}
+					#portfolio-title-desc {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1124px) {
+		nav {
+			margin-top: 41px;
+			margin-left: 0px;
+			margin-right: 0px;
+			.nav-sub-container {
+				margin: 0 5%;
+			}
+		}
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 40%;
+					.call-to-action-title {
+						font-size: 55px;
+						width: 100%;
+					}
+					.call-to-action-desc {
+						font-size: 15px;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							font-size: 16px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					width: 60%;
+					height: 708px;
+					.game-two-container {
+						width: 650px;
+						height: 780px;
+						background-size: contain;
+						left: -120px;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 600px;
+						height: 830px;
+						left: 140px;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+			.stats-container {
+				.stats {
+					.stats-category {
+						padding: 20px 80px;
+						.stats-digit {
+							font-size: 55px;
+						}
+						.stats-label {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			.portfolio {
+				width: 90%;
+				height: 647.001px;
+				margin: 0 5%;
+				align-items: center;
+				flex-shrink: 0;
+				.portfolio-header {
+					margin-bottom: 27px;
+					#portfolio-title {
+						font-size: 55px;
+						margin-bottom: 17px;
+					}
+					#portfolio-title-desc {
+						font-size: 16px;
+					}
+				}
+			}
+			.about {
+				position: relative;
+				flex-direction: column-reverse;
+				height: auto;
+				width: 80%;
+				margin: 0 10% 100px;
+				.about-text-container {
+					flex: 1;
+					width: 90%;
+					height: 400px;
+					#about-title-text {
+						font-size: 18px;
+						margin-bottom: 100px;
+					}
+					.about-desc {
+						display: flex;
+						flex-direction: column;
+						margin-bottom: 50px;
+						#about-desc-title {
+							width: 100%;
+							margin-bottom: 16px;
+							font-size: 55px;
+						}
+						#about-desc-text {
+							width: 100%;
+							font-size: 16px;
+							text-align: justify;
+						}
+					}
+					#about-more {
+						width: 150px;
+						height: 50px;
+						margin-left: 10%;
+						border-radius: 31px;
+						#about-more-text {
+							font-size: 16px;
+						}
+					}
+				}
+				.about-graphic-container {
+					width: 100%;
+					.about-graphic {
+						width: 100%;
+						height: 100%;
+						background-size: contain;
+						background-position: center center;
+					}
+					.about-graphic-background {
+						width: 100%;
+						height: 100%;
+						background-size: contain;
+						background-position: center center;
+					}
+				}
+			}
+			.game-play-container {
+				margin: 0 5%;
+				margin-bottom: 147px;
+				#game-play-section-title {
+					font-size: 18px;
+					margin-bottom: 16px;
+				}
+				#game-play-section-sub-title {
+					font-size: 55px;
+					margin-bottom: 77px;
+				}
+				.screens-container {
+					width: 100%;
+					height: 800px;
+					.game-screen {
+					}
+					#screen-one {
+						//display: none;
+					}
+					#screen-five {
+						//display:none;
+					}
+				}
+			}
+			.blog-section {
+				width: 90%;
+				margin: 0 5%;
+				margin-bottom: 79px;
+				#blog-section-title {
+					font-size: 18px;
+					margin-bottom: 14px;
+				}
+				#blog-section-subtitle {
+					font-size: 55px;
+					margin-bottom: 17px;
+				}
+				#blog-section-desc {
+					width: 70%;
+					height: 69px;
+					font-size: 16px;
+					margin-bottom: 77px;
+				}
+				.recent-blog-articles-container {
+					width: 100%;
+					flex-direction: column;
+					justify-content: space-between;
+					.article {
+						flex: 1;
+						width: 100%;
+						height: auto;
+						border-radius: 20px;
+						padding: 0 0 50px 0;
+						margin-bottom: 20px;
+						.article-featured-image {
+							width: 100%;
+							height: 300px;
+							border-radius: 20px 20px 0px 0px;
+							margin-bottom: 60px;
+							.article-date {
+								top: 276.91px;
+								left: 51px;
+								width: 169.877px;
+								height: 43.938px;
+								border-radius: 31px;
+								font-size: 20px;
+							}
+						}
+						.article-text-container {
+							padding: 0 5%;
+							.article-title {
+								width: 100%;
+								height: auto;
+								font-size: 30px;
+								margin-bottom: 17px;
+							}
+							.article-snippet {
+								width: 100%;
+								height: auto;
+								color: var(--Gray);
+								font-size: 16px;
+								margin-bottom: 33.71px;
+							}
+							.article-read-more {
+								width: 105.655px;
+								height: 17.371px;
+								font-size: 16px;
+							}
+						}
+						.article-shadow {
+							border-radius: 20px;
+							border: 1px solid #ccc;
+							bottom: -4px;
+							box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+						}
+					}
+					.article.active {
+						.article-shadow {
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+		footer {
+			flex: 0 0 100%;
+			.footer-top {
+				height: 355px;
+				margin: 82px 10% 0;
+				.mindazzle-footer-sect {
+					display: flex;
+					flex-direction: column;
+					flex: 3;
+					height: 126px;
+					flex-shrink: 0;
+					.logo {
+						margin-bottom: 26px;
+					}
+					#footer-mission-statement {
+						font-size: 16px;
+						margin-bottom: 24px;
+					}
+					.socials {
+						width: 244px;
+						height: 46px;
+						#combined-socials {
+							width: 244px;
+							height: 46px;
+						}
+						#facebook {
+						}
+						#twitter {
+						}
+						#pinterest {
+						}
+						#instagram {
+						}
+					}
+				}
+				.useful-links {
+					flex: 2;
+					margin-left: 5%;
+					#useful-links-title {
+						font-size: 20px;
+					}
+					.footer-link-container {
+						.footer-link {
+							font-size: 16px;
+						}
+					}
+				}
+				.support-links {
+					flex: 2;
+					width: 160px;
+					margin-left: 5%;
+					#support-links-title {
+						font-size: 20px;
+					}
+					.footer-link-container {
+						.footer-link {
+							font-size: 16px;
+						}
+					}
+				}
+				.footer-contact-info {
+					flex: 2;
+					margin-left: 5%;
+					#footer-contact-info-title {
+						font-size: 20px;
+					}
+					.contact-info {
+						font-size: 16px;
+					}
+				}
+			}
+			.footer-bottom {
+				display: flex;
+				justify-content: center;
+				margin: 0 10% 15px;
+				#copy-right {
+					font-size: 16px;
+				}
+			}
 		}
 	}
 }
