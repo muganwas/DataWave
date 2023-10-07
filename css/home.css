@@ -6,7 +6,7 @@ a:hover {
 }
 .logo {
 	font-family: 'Poppins';
-	font-size: 34px;
+	font-size: var(--logo);
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -49,7 +49,7 @@ nav {
 			.link-container {
 				.link {
 					font-family: 'Poppins';
-					font-size: 16px;
+					font-size: var(--navLinks);
 					font-style: normal;
 					font-weight: 500;
 					line-height: normal;
@@ -77,14 +77,13 @@ nav {
 		.welcome-msg {
 			color: var(--Purple);
 			font-family: 'Poppins';
-			font-size: 18px;
+			font-size: var(--title);
 			font-style: normal;
 			font-weight: 500;
 			line-height: 115%; /* 20.7px */
 			letter-spacing: -0.36px;
 			#app-name {
 				font-family: 'Poppins';
-				font-size: 18px;
 				font-style: normal;
 				font-weight: 700;
 				line-height: 115%;
@@ -94,7 +93,7 @@ nav {
 		.call-to-action-title {
 			color: var(--Black);
 			font-family: 'Poppins';
-			font-size: 70px;
+			font-size: var(--callToActionTitle);
 			font-style: normal;
 			font-weight: 700;
 			line-height: 115%; /* 80.5px */
@@ -107,7 +106,7 @@ nav {
 			flex-shrink: 0;
 			color: var(---Gray);
 			font-family: 'Poppins';
-			font-size: 16px;
+			font-size: var(--article);
 			font-style: normal;
 			font-weight: 400;
 			line-height: 168.5%; /* 26.96px */
@@ -131,7 +130,7 @@ nav {
 				background-repeat: no-repeat;
 				color: var(--White);
 				font-family: 'Poppins';
-				font-size: 20px;
+				font-size: var(--buttonsText);
 				font-style: normal;
 				font-weight: 600;
 				line-height: 115%; /* 23px */
@@ -155,7 +154,7 @@ nav {
 				background-position: 35px 20px;
 				background-repeat: no-repeat;
 				font-family: 'Poppins';
-				font-size: 20px;
+				font-size: var(--buttonsText);
 				font-style: normal;
 				font-weight: 600;
 				line-height: 115%; /* 23px */
@@ -208,7 +207,7 @@ nav {
 		color: var(--Purple);
 		text-align: center;
 		font-family: 'Poppins';
-		font-size: 22px;
+		font-size: var(--title);
 		font-style: normal;
 		font-weight: 500;
 		line-height: 115%; /* 25.3px */
@@ -226,7 +225,7 @@ nav {
 				color: var(--Black);
 				text-align: center;
 				font-family: 'Poppins';
-				font-size: 60px;
+				font-size: var(--subtitle);
 				font-style: normal;
 				font-weight: 700;
 				line-height: 115%; /* 69px */
@@ -236,7 +235,7 @@ nav {
 				color: var(--Gray);
 				text-align: center;
 				font-family: 'Poppins';
-				font-size: 22px;
+				font-size: var(--section);
 				font-style: normal;
 				font-weight: 500;
 				line-height: 115%; /* 25.3px */
@@ -266,7 +265,7 @@ nav {
 			color: var(--Black);
 			text-align: center;
 			font-family: 'Poppins';
-			font-size: 60px;
+			font-size: var(--subtitle);
 			font-style: normal;
 			font-weight: 700;
 			line-height: 115%; /* 69px */
@@ -278,7 +277,7 @@ nav {
 			color: var(--Gray);
 			text-align: center;
 			font-family: 'Poppins';
-			font-size: 16px;
+			font-size: var(--readMore);
 			font-style: normal;
 			font-weight: 400;
 			line-height: 168.5%; /* 26.96px */
@@ -299,7 +298,7 @@ nav {
 			display: flex;
 			color: var(--Purple);
 			font-family: 'Poppins';
-			font-size: 18px;
+			font-size: var(--title);
 			font-style: normal;
 			font-weight: 500;
 			line-height: 115%; /* 20.7px */
@@ -317,7 +316,7 @@ nav {
 				font-family: 'Poppins';
 				width: 814px;
 				margin-bottom: 16px;
-				font-size: 60px;
+				font-size: var(--subtitle);
 				font-style: normal;
 				font-weight: 700;
 				line-height: 115%; /* 69px */
@@ -328,7 +327,7 @@ nav {
 				width: 661px;
 				color: var(--Gray);
 				font-family: 'Poppins';
-				font-size: 16px;
+				font-size: var(--article);
 				font-style: normal;
 				font-weight: 400;
 				line-height: 168.5%; /* 26.96px */
@@ -349,7 +348,7 @@ nav {
 			#about-more-text {
 				color: var(--White);
 				font-family: 'Poppins';
-				font-size: 20px;
+				font-size: var(--readMore);
 				font-style: normal;
 				font-weight: 600;
 				line-height: 115%; /* 23px */
@@ -399,18 +398,18 @@ nav {
 		color: var(--Purple);
 		text-align: center;
 		font-family: 'Poppins';
-		font-size: 18px;
+		font-size: var(--title);
 		font-style: normal;
 		font-weight: 500;
 		line-height: 115%; /* 20.7px */
 		letter-spacing: -0.36px;
-		margin-bottom: 16px;
+		margin-bottom: var(--readMore);
 	}
 	#game-play-section-sub-title {
 		color: var(--Black);
 		text-align: center;
 		font-family: 'Poppins';
-		font-size: 60px;
+		font-size: var(--subtitle);
 		font-style: normal;
 		font-weight: 700;
 		line-height: 115%; /* 69px */
@@ -488,7 +487,7 @@ nav {
 		color: var(--Purple);
 		text-align: center;
 		font-family: 'Poppins';
-		font-size: 18px;
+		font-size: var(--title);
 		font-style: normal;
 		font-weight: 500;
 		line-height: 115%; /* 20.7px */
@@ -499,7 +498,7 @@ nav {
 		color: var(--Black);
 		text-align: center;
 		font-family: 'Poppins';
-		font-size: 60px;
+		font-size: var(--subtitle);
 		font-style: normal;
 		font-weight: 700;
 		line-height: 115%; /* 69px */
@@ -513,7 +512,7 @@ nav {
 		width: 1044px;
 		height: 69px;
 		flex-shrink: 0;
-		font-size: 16px;
+		font-size: var(--article);
 		font-style: normal;
 		font-weight: 400;
 		line-height: 168.5%; /* 26.96px */
@@ -559,7 +558,7 @@ nav {
 					color: var(--White);
 					text-align: center;
 					font-family: 'Roboto', roboto;
-					font-size: 20px;
+					font-size: var(--articleDate);
 					font-style: normal;
 					font-weight: 700;
 					line-height: 115%; /* 23px */
@@ -576,7 +575,7 @@ nav {
 					flex-shrink: 0;
 					color: var(--Black);
 					font-family: 'Poppins';
-					font-size: 30px;
+					font-size: var(--articleTitle);
 					font-style: normal;
 					font-weight: 600;
 					line-height: 115%; /* 34.5px */
@@ -589,7 +588,7 @@ nav {
 					flex-shrink: 0;
 					color: var(--Gray);
 					font-family: 'Poppins';
-					font-size: 16px;
+					font-size: var(--article);
 					font-style: normal;
 					font-weight: 400;
 					line-height: 168.5%; /* 26.96px */
@@ -602,7 +601,7 @@ nav {
 					flex-shrink: 0;
 					color: var(--Black);
 					font-family: 'Poppins';
-					font-size: 16px;
+					font-size: var(--readMore);
 					font-style: normal;
 					font-weight: 500;
 					line-height: 115%; /* 18.4px */
@@ -661,7 +660,7 @@ footer {
 			#footer-mission-statement {
 				color: var(--LGray);
 				font-family: 'Poppins';
-				font-size: 16px;
+				font-size: var(--footerLinks);
 				font-style: normal;
 				font-weight: 500;
 				line-height: 168.5%; /* 26.96px */
@@ -700,6 +699,7 @@ footer {
 			#useful-links-title {
 				color: var(--White);
 				font-family: 'Poppins';
+				font-size: var(--footerTitles);
 				font-size: 20px;
 				font-style: normal;
 				font-weight: 600;
@@ -710,7 +710,8 @@ footer {
 				.footer-link {
 					color: var(--LGray);
 					font-family: 'Poppins';
-					font-size: 16px;
+					font-size: var(--footerLinks);
+					font-size: var(--readMore);
 					font-style: normal;
 					font-weight: 500;
 					line-height: 256%; /* 40.96px */
@@ -727,17 +728,17 @@ footer {
 			#support-links-title {
 				color: var(--White);
 				font-family: 'Poppins';
-				font-size: 20px;
 				font-style: normal;
 				font-weight: 600;
+				font-size: var(--footerTitles);
 				line-height: 168.5%; /* 33.7px */
 				letter-spacing: -0.8px;
 			}
 			.footer-link-container {
 				.footer-link {
 					color: var(--LGray);
+					font-size: var(--footerLinks);
 					font-family: 'Poppins';
-					font-size: 16px;
 					font-style: normal;
 					font-weight: 500;
 					line-height: 256%; /* 40.96px */
@@ -753,7 +754,7 @@ footer {
 			margin-left: 147px;
 			#footer-contact-info-title {
 				font-family: 'Poppins';
-				font-size: 20px;
+				font-size: var(--footerTitles);
 				font-style: normal;
 				font-weight: 600;
 				line-height: 168.5%; /* 33.7px */
@@ -761,8 +762,8 @@ footer {
 			}
 			.contact-info {
 				color: var(--LGray);
+				font-size: var(--footerLinks);
 				font-family: 'Poppins';
-				font-size: 16px;
 				font-style: normal;
 				font-weight: 500;
 				line-height: 256%; /* 40.96px */
@@ -777,9 +778,9 @@ footer {
 		margin-right: 771px;
 		margin-bottom: 15px;
 		#copy-right {
+			font-size: var(--footerLinks);
 			text-align: center;
 			font-family: 'Poppins';
-			font-size: 16px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 256%; /* 40.96px */
@@ -804,11 +805,7 @@ footer {
 				.call-to-action {
 					width: 40%;
 					.call-to-action-title {
-						font-size: 55px;
 						width: 100%;
-					}
-					.call-to-action-desc {
-						font-size: 15px;
 					}
 					.call-to-action-buttons {
 						.ios-button {
@@ -818,7 +815,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							#apple-download-text {
 								margin-left: 50px;
 							}
@@ -828,7 +824,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							margin-left: 20px;
 							#android-download-text {
 								margin-left: 56px;
@@ -859,12 +854,6 @@ footer {
 				.stats {
 					.stats-category {
 						padding: 20px 80px;
-						.stats-digit {
-							font-size: 55px;
-						}
-						.stats-label {
-							font-size: 18px;
-						}
 					}
 				}
 			}
@@ -876,11 +865,7 @@ footer {
 				.portfolio-header {
 					margin-bottom: 27px;
 					#portfolio-title {
-						font-size: 55px;
 						margin-bottom: 17px;
-					}
-					#portfolio-title-desc {
-						font-size: 16px;
 					}
 				}
 			}
@@ -891,7 +876,6 @@ footer {
 					flex: 1;
 					width: 50%;
 					#about-title-text {
-						font-size: 18px;
 						margin-bottom: 100px;
 					}
 					.about-desc {
@@ -901,11 +885,9 @@ footer {
 						#about-desc-title {
 							width: 100%;
 							margin-bottom: 16px;
-							font-size: 55px;
 						}
 						#about-desc-text {
 							width: 661px;
-							font-size: 16px;
 						}
 					}
 					#about-more {
@@ -913,9 +895,6 @@ footer {
 						height: 50px;
 						margin-left: 10%;
 						border-radius: 31px;
-						#about-more-text {
-							font-size: 16px;
-						}
 					}
 				}
 				.about-graphic-container {
@@ -937,23 +916,15 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 147px;
 				#game-play-section-title {
-					font-size: 18px;
 					margin-bottom: 16px;
 				}
 				#game-play-section-sub-title {
-					font-size: 55px;
 					margin-bottom: 77px;
 				}
 				.screens-container {
 					width: 100%;
 					height: 800px;
 					.game-screen {
-					}
-					#screen-one {
-						//display: none;
-					}
-					#screen-five {
-						//display:none;
 					}
 				}
 			}
@@ -962,17 +933,14 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 79px;
 				#blog-section-title {
-					font-size: 18px;
 					margin-bottom: 14px;
 				}
 				#blog-section-subtitle {
-					font-size: 55px;
 					margin-bottom: 17px;
 				}
 				#blog-section-desc {
 					width: 70%;
 					height: 69px;
-					font-size: 16px;
 					margin-bottom: 77px;
 				}
 				.recent-blog-articles-container {
@@ -992,7 +960,6 @@ footer {
 								width: 169.877px;
 								height: 43.938px;
 								border-radius: 31px;
-								font-size: 20px;
 							}
 						}
 						.article-text-container {
@@ -1000,20 +967,17 @@ footer {
 							.article-title {
 								width: 438px;
 								height: 75px;
-								font-size: 30px;
 								margin-bottom: 17px;
 							}
 							.article-snippet {
 								width: 519px;
 								height: 83px;
 								color: var(--Gray);
-								font-size: 16px;
 								margin-bottom: 33.71px;
 							}
 							.article-read-more {
 								width: 105.655px;
 								height: 17.371px;
-								font-size: 16px;
 							}
 						}
 						.article-shadow {
@@ -1046,7 +1010,6 @@ footer {
 						margin-bottom: 26px;
 					}
 					#footer-mission-statement {
-						font-size: 16px;
 						margin-bottom: 24px;
 					}
 					.socials {
@@ -1069,45 +1032,22 @@ footer {
 				.useful-links {
 					width: 160px;
 					margin-left: 200px;
-					#useful-links-title {
-						font-size: 20px;
-					}
-					.footer-link-container {
-						.footer-link {
-							font-size: 16px;
-						}
-					}
 				}
 				.support-links {
 					width: 160px;
 					margin-left: 99px;
-					#support-links-title {
-						font-size: 20px;
-					}
 					.footer-link-container {
-						.footer-link {
-							font-size: 16px;
-						}
 					}
 				}
 				.footer-contact-info {
 					width: 214px;
 					margin-left: 147px;
-					#footer-contact-info-title {
-						font-size: 20px;
-					}
-					.contact-info {
-						font-size: 16px;
-					}
 				}
 			}
 			.footer-bottom {
 				display: flex;
 				justify-content: center;
 				margin: 0 10% 15px;
-				#copy-right {
-					font-size: 16px;
-				}
 			}
 		}
 	}
@@ -1127,11 +1067,7 @@ footer {
 				.call-to-action {
 					width: 40%;
 					.call-to-action-title {
-						font-size: 55px;
 						width: 100%;
-					}
-					.call-to-action-desc {
-						font-size: 15px;
 					}
 					.call-to-action-buttons {
 						.ios-button {
@@ -1141,7 +1077,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							#apple-download-text {
 								margin-left: 50px;
 							}
@@ -1151,7 +1086,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							margin-left: 20px;
 							#android-download-text {
 								margin-left: 56px;
@@ -1182,12 +1116,6 @@ footer {
 				.stats {
 					.stats-category {
 						padding: 20px 80px;
-						.stats-digit {
-							font-size: 55px;
-						}
-						.stats-label {
-							font-size: 18px;
-						}
 					}
 				}
 			}
@@ -1199,11 +1127,7 @@ footer {
 				.portfolio-header {
 					margin-bottom: 27px;
 					#portfolio-title {
-						font-size: 55px;
 						margin-bottom: 17px;
-					}
-					#portfolio-title-desc {
-						font-size: 16px;
 					}
 				}
 			}
@@ -1214,7 +1138,6 @@ footer {
 					flex: 1;
 					width: 50%;
 					#about-title-text {
-						font-size: 18px;
 						margin-bottom: 100px;
 					}
 					.about-desc {
@@ -1224,12 +1147,10 @@ footer {
 						#about-desc-title {
 							width: 100%;
 							margin-bottom: 16px;
-							font-size: 55px;
 						}
 						#about-desc-text {
 							width: 80%;
 							height: auto;
-							font-size: 16px;
 						}
 					}
 					#about-more {
@@ -1237,9 +1158,6 @@ footer {
 						height: 50px;
 						margin-left: 10%;
 						border-radius: 31px;
-						#about-more-text {
-							font-size: 16px;
-						}
 					}
 				}
 				.about-graphic-container {
@@ -1261,11 +1179,9 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 147px;
 				#game-play-section-title {
-					font-size: 18px;
 					margin-bottom: 16px;
 				}
 				#game-play-section-sub-title {
-					font-size: 55px;
 					margin-bottom: 77px;
 				}
 				.screens-container {
@@ -1299,17 +1215,14 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 79px;
 				#blog-section-title {
-					font-size: 18px;
 					margin-bottom: 14px;
 				}
 				#blog-section-subtitle {
-					font-size: 55px;
 					margin-bottom: 17px;
 				}
 				#blog-section-desc {
 					width: 70%;
 					height: 69px;
-					font-size: 16px;
 					margin-bottom: 77px;
 				}
 				.recent-blog-articles-container {
@@ -1329,7 +1242,6 @@ footer {
 								width: 169.877px;
 								height: 43.938px;
 								border-radius: 31px;
-								font-size: 20px;
 							}
 						}
 						.article-text-container {
@@ -1337,20 +1249,17 @@ footer {
 							.article-title {
 								width: 438px;
 								height: 75px;
-								font-size: 30px;
 								margin-bottom: 17px;
 							}
 							.article-snippet {
 								width: 519px;
 								height: 83px;
 								color: var(--Gray);
-								font-size: 16px;
 								margin-bottom: 33.71px;
 							}
 							.article-read-more {
 								width: 105.655px;
 								height: 17.371px;
-								font-size: 16px;
 							}
 						}
 						.article-shadow {
@@ -1383,7 +1292,6 @@ footer {
 						margin-bottom: 26px;
 					}
 					#footer-mission-statement {
-						font-size: 16px;
 						margin-bottom: 24px;
 					}
 					.socials {
@@ -1406,45 +1314,24 @@ footer {
 				.useful-links {
 					flex: 2;
 					margin-left: 5%;
-					#useful-links-title {
-						font-size: 20px;
-					}
 					.footer-link-container {
-						.footer-link {
-							font-size: 16px;
-						}
 					}
 				}
 				.support-links {
 					flex: 2;
 					width: 160px;
 					margin-left: 5%;
-					#support-links-title {
-						font-size: 20px;
-					}
 					.footer-link-container {
-						.footer-link {
-							font-size: 16px;
-						}
 					}
 				}
 				.footer-contact-info {
 					flex: 2;
 					margin-left: 5%;
-					#footer-contact-info-title {
-						font-size: 20px;
-					}
-					.contact-info {
-						font-size: 16px;
-					}
 				}
-			}
-			.footer-bottom {
-				display: flex;
-				justify-content: center;
-				margin: 0 10% 15px;
-				#copy-right {
-					font-size: 16px;
+				.footer-bottom {
+					display: flex;
+					justify-content: center;
+					margin: 0 10% 15px;
 				}
 			}
 		}
@@ -1456,17 +1343,14 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 79px;
 				#blog-section-title {
-					font-size: 18px;
 					margin-bottom: 14px;
 				}
 				#blog-section-subtitle {
-					font-size: 55px;
 					margin-bottom: 17px;
 				}
 				#blog-section-desc {
 					width: 70%;
 					height: 69px;
-					font-size: 16px;
 					margin-bottom: 77px;
 				}
 				.recent-blog-articles-container {
@@ -1488,7 +1372,6 @@ footer {
 								width: 169.877px;
 								height: 43.938px;
 								border-radius: 31px;
-								font-size: 20px;
 							}
 						}
 						.article-text-container {
@@ -1496,20 +1379,17 @@ footer {
 							.article-title {
 								width: 100%;
 								height: auto;
-								font-size: 30px;
 								margin-bottom: 17px;
 							}
 							.article-snippet {
 								width: 100%;
 								height: auto;
 								color: var(--Gray);
-								font-size: 16px;
 								margin-bottom: 33.71px;
 							}
 							.article-read-more {
 								width: 105.655px;
 								height: 17.371px;
-								font-size: 16px;
 							}
 						}
 						.article-shadow {
@@ -1536,11 +1416,7 @@ footer {
 				.call-to-action {
 					width: 40%;
 					.call-to-action-title {
-						font-size: 55px;
 						width: 100%;
-					}
-					.call-to-action-desc {
-						font-size: 15px;
 					}
 					.call-to-action-buttons {
 						.ios-button {
@@ -1550,7 +1426,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							#apple-download-text {
 								margin-left: 50px;
 							}
@@ -1560,7 +1435,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							margin-left: 20px;
 							#android-download-text {
 								margin-left: 56px;
@@ -1599,11 +1473,7 @@ footer {
 				.portfolio-header {
 					margin-bottom: 27px;
 					#portfolio-title {
-						font-size: 55px;
 						margin-bottom: 17px;
-					}
-					#portfolio-title-desc {
-						font-size: 16px;
 					}
 				}
 			}
@@ -1625,11 +1495,7 @@ footer {
 				.call-to-action {
 					width: 40%;
 					.call-to-action-title {
-						font-size: 55px;
 						width: 100%;
-					}
-					.call-to-action-desc {
-						font-size: 15px;
 					}
 					.call-to-action-buttons {
 						.ios-button {
@@ -1639,7 +1505,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							#apple-download-text {
 								margin-left: 50px;
 							}
@@ -1649,7 +1514,6 @@ footer {
 							height: 50px;
 							border-radius: 28px;
 							background-position: 25px 12px;
-							font-size: 16px;
 							margin-left: 20px;
 							#android-download-text {
 								margin-left: 56px;
@@ -1686,12 +1550,6 @@ footer {
 					}
 					.stats-category {
 						padding: 20px 80px;
-						.stats-digit {
-							font-size: 55px;
-						}
-						.stats-label {
-							font-size: 18px;
-						}
 					}
 				}
 			}
@@ -1704,11 +1562,7 @@ footer {
 				.portfolio-header {
 					margin-bottom: 27px;
 					#portfolio-title {
-						font-size: 55px;
 						margin-bottom: 17px;
-					}
-					#portfolio-title-desc {
-						font-size: 16px;
 					}
 				}
 			}
@@ -1723,7 +1577,6 @@ footer {
 					width: 90%;
 					height: 400px;
 					#about-title-text {
-						font-size: 18px;
 						margin-bottom: 100px;
 					}
 					.about-desc {
@@ -1733,11 +1586,9 @@ footer {
 						#about-desc-title {
 							width: 100%;
 							margin-bottom: 16px;
-							font-size: 55px;
 						}
 						#about-desc-text {
 							width: 100%;
-							font-size: 16px;
 							text-align: justify;
 						}
 					}
@@ -1746,9 +1597,6 @@ footer {
 						height: 50px;
 						margin-left: 10%;
 						border-radius: 31px;
-						#about-more-text {
-							font-size: 16px;
-						}
 					}
 				}
 				.about-graphic-container {
@@ -1771,11 +1619,9 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 147px;
 				#game-play-section-title {
-					font-size: 18px;
 					margin-bottom: 16px;
 				}
 				#game-play-section-sub-title {
-					font-size: 55px;
 					margin-bottom: 77px;
 				}
 				.screens-container {
@@ -1788,17 +1634,14 @@ footer {
 				margin: 0 5%;
 				margin-bottom: 79px;
 				#blog-section-title {
-					font-size: 18px;
 					margin-bottom: 14px;
 				}
 				#blog-section-subtitle {
-					font-size: 55px;
 					margin-bottom: 17px;
 				}
 				#blog-section-desc {
 					width: 70%;
 					height: 69px;
-					font-size: 16px;
 					margin-bottom: 77px;
 				}
 				.recent-blog-articles-container {
@@ -1823,7 +1666,6 @@ footer {
 								width: 169.877px;
 								height: 43.938px;
 								border-radius: 31px;
-								font-size: 20px;
 							}
 						}
 						.article-text-container {
@@ -1831,20 +1673,17 @@ footer {
 							.article-title {
 								width: 100%;
 								height: auto;
-								font-size: 30px;
 								margin-bottom: 17px;
 							}
 							.article-snippet {
 								width: 100%;
 								height: auto;
 								color: var(--Gray);
-								font-size: 16px;
 								margin-bottom: 33.71px;
 							}
 							.article-read-more {
 								width: 105.655px;
 								height: 17.371px;
-								font-size: 16px;
 							}
 						}
 						.article-shadow {
@@ -1877,7 +1716,6 @@ footer {
 						margin-bottom: 26px;
 					}
 					#footer-mission-statement {
-						font-size: 16px;
 						margin-bottom: 24px;
 					}
 					.socials {
@@ -1900,60 +1738,39 @@ footer {
 				.useful-links {
 					flex: 2;
 					margin-left: 5%;
-					#useful-links-title {
-						font-size: 20px;
-					}
 					.footer-link-container {
-						.footer-link {
-							font-size: 16px;
-						}
 					}
 				}
 				.support-links {
 					flex: 2;
 					width: 160px;
 					margin-left: 5%;
-					#support-links-title {
-						font-size: 20px;
-					}
 					.footer-link-container {
-						.footer-link {
-							font-size: 16px;
-						}
 					}
 				}
 				.footer-contact-info {
 					flex: 2;
 					margin-left: 5%;
-					#footer-contact-info-title {
-						font-size: 20px;
-					}
-					.contact-info {
-						font-size: 16px;
-					}
 				}
 			}
 			.footer-bottom {
 				display: flex;
 				justify-content: center;
 				margin: 0 10% 15px;
-				#copy-right {
-					font-size: 16px;
-				}
 			}
 		}
 	}
 	@media (max-width: 1069px) {
 		main {
+			.portfolio {
+			}
 			.game-play-container {
 				margin: 0 5%;
 				margin-bottom: 147px;
 				#game-play-section-title {
-					font-size: 18px;
 					margin-bottom: 16px;
 				}
 				#game-play-section-sub-title {
-					font-size: 55px;
 					margin-bottom: 77px;
 				}
 				.screens-container {
@@ -1978,7 +1795,7 @@ footer {
 			}
 		}
 	}
-	@media (max-width: 640px) {
+	@media (max-width: 648px) {
 		nav {
 			.nav-sub-container {
 				position: relative;

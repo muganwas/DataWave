@@ -7,6 +7,19 @@
 	--Gray: #808086;
 	--LGray: #d4d4d4;
 	--White: #ffffff;
+	--logo: 34px;
+	--navLinks: 16px;
+	--callToActionTitle: 70px;
+	--title: 22px;
+	--subtitle: 60px;
+	--section: 18px;
+	--articleTitle: 30px;
+	--article: 16px;
+	--articleDate: 20px;
+	--readMore: 16px;
+	--footerTitles: 20px;
+	--footerLinks: 16px;
+	--buttonsText: 20px;
 }
 
 body {
@@ -40,6 +53,9 @@ footer {
 }
 @media screen {
 	@media (max-width: 1919px) {
+		:root {
+			--buttonsText: 16px;
+		}
 		nav {
 			width: 100%;
 		}
@@ -50,9 +66,30 @@ footer {
 			width: 100%;
 		}
 	}
-	@media (min-width: 1920px) {
-		main {
-			width: 1920px;
+	@media (max-width: 1781px) {
+		:root {
+			--title: 20px;
+			--subtitle: 55px;
+			--section: 16px;
+			--articleTitle: 28px;
+			--article: 14px;
+			--callToActionTitle: 60px;
+			--articleDate: 18px;
+			--readMore: 14px;
+			--footerTitles: 18px;
+			--footerLinks: 16px;
+		}
+	}
+	@media (max-width: 960px) {
+		:root {
+			--title: 20px;
+			--subtitle: 45px;
+			--callToActionTitle: 55px;
+			--section: 14px;
+			--sectionReadMore: 12px;
+			--articleTitle: 24px;
+			--article: 12px;
+			--articleReadMore: 12px;
 		}
 	}
 }
