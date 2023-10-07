@@ -62,166 +62,207 @@ nav {
 		}
 	}
 }
-.call-to-action-container {
-	display: flex;
-	flex-direction: row;
-	margin-top: 86px;
-	margin-left: 193px;
-	align-items: center;
-	height: 700px;
-	margin-bottom: 300px;
-	.call-to-action {
+main {
+	.call-to-action-container {
+		display: flex;
+		flex-direction: row;
+		margin-top: 86px;
+		margin-left: 193px;
+		align-items: center;
+		height: 700px;
+		margin-bottom: 300px;
+		.call-to-action {
+			display: flex;
+			flex-direction: column;
+			width: 634px;
+			.welcome-msg {
+				color: var(--Purple);
+				font-family: 'Poppins';
+				font-size: var(--title);
+				font-style: normal;
+				font-weight: 500;
+				line-height: 115%; /* 20.7px */
+				letter-spacing: -0.36px;
+				#app-name {
+					font-family: 'Poppins';
+					font-style: normal;
+					font-weight: 700;
+					line-height: 115%;
+					letter-spacing: -0.36px;
+				}
+			}
+			.call-to-action-title {
+				color: var(--Black);
+				font-family: 'Poppins';
+				font-size: var(--callToActionTitle);
+				font-style: normal;
+				font-weight: 700;
+				line-height: 115%; /* 80.5px */
+				letter-spacing: -1.4px;
+				width: 555px;
+				margin-top: 14px;
+			}
+			.call-to-action-desc {
+				display: flex;
+				flex-shrink: 0;
+				color: var(---Gray);
+				font-family: 'Poppins';
+				font-size: var(--article);
+				font-style: normal;
+				font-weight: 400;
+				line-height: 168.5%; /* 26.96px */
+				letter-spacing: -0.64px;
+				margin-top: 25px;
+			}
+			.call-to-action-buttons {
+				display: flex;
+				margin-top: 46px;
+				align-items: center;
+				.ios-button {
+					display: flex;
+					align-items: center;
+					width: 257px;
+					height: 64px;
+					flex-shrink: 0;
+					border-radius: 31px;
+					background-color: var(--Purple);
+					background-image: url('../images/apple_icon.svg');
+					background-position: 30px 18px;
+					background-repeat: no-repeat;
+					color: var(--White);
+					font-family: 'Poppins';
+					font-size: var(--buttonsText);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 115%; /* 23px */
+					letter-spacing: -0.4px;
+					cursor: pointer;
+					#apple-download-text {
+						margin-left: 59px;
+					}
+				}
+				.android-button {
+					display: flex;
+					align-items: center;
+					width: 311px;
+					height: 64px;
+					flex-shrink: 0;
+					border-radius: 31px;
+					border: 3px solid var(--Purple);
+					color: var(--Purple);
+					background-color: var(--White);
+					background-image: url('../images/play_store_icon.svg');
+					background-position: 35px 20px;
+					background-repeat: no-repeat;
+					font-family: 'Poppins';
+					font-size: var(--buttonsText);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 115%; /* 23px */
+					letter-spacing: -0.4px;
+					margin-left: 20px;
+					cursor: pointer;
+					#android-download-text {
+						margin-left: 65px;
+					}
+				}
+			}
+		}
+		.game-illustrations {
+			display: flex;
+			position: relative;
+			width: 910px;
+			height: 868px;
+			.game-two-container {
+				position: absolute;
+				width: 844.234px;
+				height: 933.033px;
+				left: -160px;
+				flex-shrink: 0;
+				background-image: url('../images/phone-2.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.game-one-container {
+				position: absolute;
+				width: 910px;
+				height: 868px;
+				left: 334px;
+				top: 100px;
+				flex-shrink: 0;
+				transform: rotate(50deg);
+				background-image: url('../images/phone-1.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	.stats-container {
 		display: flex;
 		flex-direction: column;
-		width: 634px;
-		.welcome-msg {
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 179px;
+		.stats-header {
+			display: flex;
 			color: var(--Purple);
+			text-align: center;
 			font-family: 'Poppins';
 			font-size: var(--title);
 			font-style: normal;
 			font-weight: 500;
-			line-height: 115%; /* 20.7px */
-			letter-spacing: -0.36px;
-			#app-name {
-				font-family: 'Poppins';
-				font-style: normal;
-				font-weight: 700;
-				line-height: 115%;
-				letter-spacing: -0.36px;
-			}
+			line-height: 115%; /* 25.3px */
+			margin-bottom: 74px;
 		}
-		.call-to-action-title {
-			color: var(--Black);
-			font-family: 'Poppins';
-			font-size: var(--callToActionTitle);
-			font-style: normal;
-			font-weight: 700;
-			line-height: 115%; /* 80.5px */
-			letter-spacing: -1.4px;
-			width: 555px;
-			margin-top: 14px;
-		}
-		.call-to-action-desc {
+		.stats {
 			display: flex;
-			flex-shrink: 0;
-			color: var(---Gray);
-			font-family: 'Poppins';
-			font-size: var(--article);
-			font-style: normal;
-			font-weight: 400;
-			line-height: 168.5%; /* 26.96px */
-			letter-spacing: -0.64px;
-			margin-top: 25px;
-		}
-		.call-to-action-buttons {
-			display: flex;
-			margin-top: 46px;
-			align-items: center;
-			.ios-button {
+			flex-direction: row;
+			.stats-category {
 				display: flex;
-				align-items: center;
-				width: 257px;
-				height: 64px;
-				flex-shrink: 0;
-				border-radius: 31px;
-				background-color: var(--Purple);
-				background-image: url('../images/apple_icon.svg');
-				background-position: 30px 18px;
-				background-repeat: no-repeat;
-				color: var(--White);
-				font-family: 'Poppins';
-				font-size: var(--buttonsText);
-				font-style: normal;
-				font-weight: 600;
-				line-height: 115%; /* 23px */
-				letter-spacing: -0.4px;
-				cursor: pointer;
-				#apple-download-text {
-					margin-left: 59px;
+				flex-direction: column;
+				padding: 20px 94px;
+				border-right: solid 1px var(--Gray);
+				.stats-digit {
+					color: var(--Black);
+					text-align: center;
+					font-family: 'Poppins';
+					font-size: var(--subtitle);
+					font-style: normal;
+					font-weight: 700;
+					line-height: 115%; /* 69px */
+					letter-spacing: -1.2px;
+				}
+				.stats-label {
+					color: var(--Gray);
+					text-align: center;
+					font-family: 'Poppins';
+					font-size: var(--section);
+					font-style: normal;
+					font-weight: 500;
+					line-height: 115%; /* 25.3px */
+					letter-spacing: -0.44px;
 				}
 			}
-			.android-button {
-				display: flex;
-				align-items: center;
-				width: 311px;
-				height: 64px;
-				flex-shrink: 0;
-				border-radius: 31px;
-				border: 3px solid var(--Purple);
-				color: var(--Purple);
-				background-color: var(--White);
-				background-image: url('../images/play_store_icon.svg');
-				background-position: 35px 20px;
-				background-repeat: no-repeat;
-				font-family: 'Poppins';
-				font-size: var(--buttonsText);
-				font-style: normal;
-				font-weight: 600;
-				line-height: 115%; /* 23px */
-				letter-spacing: -0.4px;
-				margin-left: 20px;
-				cursor: pointer;
-				#android-download-text {
-					margin-left: 65px;
-				}
+			.stats-category:last-of-type {
+				border-right: none;
 			}
 		}
 	}
-	.game-illustrations {
+	.portfolio {
 		display: flex;
-		position: relative;
-		width: 910px;
-		height: 868px;
-		.game-two-container {
-			position: absolute;
-			width: 844.234px;
-			height: 933.033px;
-			left: -160px;
-			flex-shrink: 0;
-			background-image: url('../images/phone-2.png');
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-		.game-one-container {
-			position: absolute;
-			width: 910px;
-			height: 868px;
-			left: 334px;
-			top: 100px;
-			flex-shrink: 0;
-			transform: rotate(50deg);
-			background-image: url('../images/phone-1.png');
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-	}
-}
-.stats-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 179px;
-	.stats-header {
+		flex-direction: column;
 		display: flex;
-		color: var(--Purple);
-		text-align: center;
-		font-family: 'Poppins';
-		font-size: var(--title);
-		font-style: normal;
-		font-weight: 500;
-		line-height: 115%; /* 25.3px */
-		margin-bottom: 74px;
-	}
-	.stats {
-		display: flex;
-		flex-direction: row;
-		.stats-category {
+		width: 1434px;
+		height: 647.001px;
+		margin-left: 235px;
+		flex-shrink: 0;
+		.portfolio-header {
 			display: flex;
 			flex-direction: column;
-			padding: 20px 94px;
-			border-right: solid 1px var(--Gray);
-			.stats-digit {
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 27px;
+			#portfolio-title {
 				color: var(--Black);
 				text-align: center;
 				font-family: 'Poppins';
@@ -230,38 +271,231 @@ nav {
 				font-weight: 700;
 				line-height: 115%; /* 69px */
 				letter-spacing: -1.2px;
+				margin-bottom: 17px;
 			}
-			.stats-label {
+			#portfolio-title-desc {
+				width: 796px;
 				color: var(--Gray);
 				text-align: center;
 				font-family: 'Poppins';
-				font-size: var(--section);
+				font-size: var(--readMore);
 				font-style: normal;
-				font-weight: 500;
-				line-height: 115%; /* 25.3px */
-				letter-spacing: -0.44px;
+				font-weight: 400;
+				line-height: 168.5%; /* 26.96px */
+				letter-spacing: -0.64px;
 			}
 		}
-		.stats-category:last-of-type {
-			border-right: none;
+	}
+	.about {
+		display: flex;
+		flex-direction: row;
+		height: 1106px;
+		align-items: center;
+		flex-shrink: 0;
+		margin-left: 197px;
+		.about-text-container {
+			flex: 1;
+			#about-title-text {
+				display: flex;
+				color: var(--Purple);
+				font-family: 'Poppins';
+				font-size: var(--title);
+				font-style: normal;
+				font-weight: 500;
+				line-height: 115%; /* 20.7px */
+				letter-spacing: -0.36px;
+				margin-bottom: 100px;
+			}
+			.about-desc {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 119px;
+				#about-desc-title {
+					display: block;
+					color: var(--Black);
+					text-transform: uppercase;
+					font-family: 'Poppins';
+					width: 814px;
+					margin-bottom: 16px;
+					font-size: var(--subtitle);
+					font-style: normal;
+					font-weight: 700;
+					line-height: 115%; /* 69px */
+					letter-spacing: -1.2px;
+				}
+				#about-desc-text {
+					display: block;
+					width: 661px;
+					color: var(--Gray);
+					font-family: 'Poppins';
+					font-size: var(--article);
+					font-style: normal;
+					font-weight: 400;
+					line-height: 168.5%; /* 26.96px */
+					letter-spacing: -0.64px;
+				}
+			}
+			#about-more {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 200px;
+				height: 64px;
+				flex-shrink: 0;
+				border-radius: 31px;
+				margin-left: 142px;
+				background: var(--Purple);
+				cursor: pointer;
+				#about-more-text {
+					color: var(--White);
+					font-family: 'Poppins';
+					font-size: var(--readMore);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 115%; /* 23px */
+					letter-spacing: -0.4px;
+				}
+			}
+		}
+		.about-graphic-container {
+			position: relative;
+			width: 986px;
+			height: 986px;
+			flex-shrink: 0;
+			.about-graphic {
+				position: absolute;
+				z-index: 10;
+				display: flex;
+				width: 986px;
+				height: 986px;
+				flex-shrink: 0;
+				background-image: url('../images/about-graphic.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+			.about-graphic-background {
+				position: absolute;
+				display: flex;
+				z-index: 1;
+				width: 938px;
+				height: 938px;
+				flex-shrink: 0;
+				background-image: url('../images/rings.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
 		}
 	}
-}
-.portfolio {
-	display: flex;
-	flex-direction: column;
-	display: flex;
-	width: 1434px;
-	height: 647.001px;
-	margin-left: 235px;
-	flex-shrink: 0;
-	.portfolio-header {
+	.game-play-container {
 		display: flex;
 		flex-direction: column;
+		flex-shrink: 0;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 27px;
-		#portfolio-title {
+		margin-bottom: 147px;
+		#game-play-section-title {
+			color: var(--Purple);
+			text-align: center;
+			font-family: 'Poppins';
+			font-size: var(--title);
+			font-style: normal;
+			font-weight: 500;
+			line-height: 115%; /* 20.7px */
+			letter-spacing: -0.36px;
+			margin-bottom: var(--readMore);
+		}
+		#game-play-section-sub-title {
+			color: var(--Black);
+			text-align: center;
+			font-family: 'Poppins';
+			font-size: var(--subtitle);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 115%; /* 69px */
+			letter-spacing: -1.2px;
+			margin-bottom: 77px;
+		}
+		.screens-container {
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			width: 1368px;
+			height: 916.356px;
+			.game-screen {
+				display: flex;
+				position: absolute;
+				flex-shrink: 0;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			#screen-one {
+				width: 394.951px;
+				height: 792.356px;
+				flex-shrink: 0;
+				z-index: 1;
+				background-image: url('../images/game_play_1.png');
+				left: 0px;
+				top: 102px;
+			}
+			#screen-two {
+				width: 401px;
+				height: 795px;
+				flex-shrink: 0;
+				z-index: 5;
+				background-image: url('../images/game_play_2.png');
+				left: 273px;
+				top: 51px;
+			}
+			#screen-three {
+				width: 385px;
+				height: 811px;
+				flex-shrink: 0;
+				z-index: 10;
+				background-image: url('../images/game_play_3.png');
+				left: 474px;
+				top: 0;
+			}
+			#screen-four {
+				width: 365px;
+				height: 799px;
+				flex-shrink: 0;
+				z-index: 5;
+				background-image: url('../images/game_play_4.png');
+				left: 768px;
+				top: 51px;
+			}
+			#screen-five {
+				width: 356.469px;
+				height: 797.569px;
+				flex-shrink: 0;
+				z-index: 1;
+				background-image: url('../images/game_play_5.png');
+				left: 1011px;
+				top: 102px;
+			}
+		}
+	}
+	.blog-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 1320px;
+		margin-left: 300px;
+		margin-bottom: 79px;
+		#blog-section-title {
+			color: var(--Purple);
+			text-align: center;
+			font-family: 'Poppins';
+			font-size: var(--title);
+			font-style: normal;
+			font-weight: 500;
+			line-height: 115%; /* 20.7px */
+			letter-spacing: -0.36px;
+			margin-bottom: 14px;
+		}
+		#blog-section-subtitle {
 			color: var(--Black);
 			text-align: center;
 			font-family: 'Poppins';
@@ -272,360 +506,128 @@ nav {
 			letter-spacing: -1.2px;
 			margin-bottom: 17px;
 		}
-		#portfolio-title-desc {
-			width: 796px;
+		#blog-section-desc {
 			color: var(--Gray);
 			text-align: center;
 			font-family: 'Poppins';
-			font-size: var(--readMore);
+			width: 1044px;
+			height: 69px;
+			flex-shrink: 0;
+			font-size: var(--article);
 			font-style: normal;
 			font-weight: 400;
 			line-height: 168.5%; /* 26.96px */
 			letter-spacing: -0.64px;
+			margin-bottom: 77px;
 		}
-	}
-}
-.about {
-	display: flex;
-	flex-direction: row;
-	height: 1106px;
-	align-items: center;
-	flex-shrink: 0;
-	margin-left: 197px;
-	.about-text-container {
-		flex: 1;
-		#about-title-text {
+		.recent-blog-articles-container {
 			display: flex;
-			color: var(--Purple);
-			font-family: 'Poppins';
-			font-size: var(--title);
-			font-style: normal;
-			font-weight: 500;
-			line-height: 115%; /* 20.7px */
-			letter-spacing: -0.36px;
-			margin-bottom: 100px;
-		}
-		.about-desc {
-			display: flex;
-			flex-direction: column;
-			margin-bottom: 119px;
-			#about-desc-title {
-				display: block;
-				color: var(--Black);
-				text-transform: uppercase;
-				font-family: 'Poppins';
-				width: 814px;
-				margin-bottom: 16px;
-				font-size: var(--subtitle);
-				font-style: normal;
-				font-weight: 700;
-				line-height: 115%; /* 69px */
-				letter-spacing: -1.2px;
-			}
-			#about-desc-text {
-				display: block;
-				width: 661px;
-				color: var(--Gray);
-				font-family: 'Poppins';
-				font-size: var(--article);
-				font-style: normal;
-				font-weight: 400;
-				line-height: 168.5%; /* 26.96px */
-				letter-spacing: -0.64px;
-			}
-		}
-		#about-more {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 200px;
-			height: 64px;
-			flex-shrink: 0;
-			border-radius: 31px;
-			margin-left: 142px;
-			background: var(--Purple);
-			cursor: pointer;
-			#about-more-text {
-				color: var(--White);
-				font-family: 'Poppins';
-				font-size: var(--readMore);
-				font-style: normal;
-				font-weight: 600;
-				line-height: 115%; /* 23px */
-				letter-spacing: -0.4px;
-			}
-		}
-	}
-	.about-graphic-container {
-		position: relative;
-		width: 986px;
-		height: 986px;
-		flex-shrink: 0;
-		.about-graphic {
-			position: absolute;
-			z-index: 10;
-			display: flex;
-			width: 986px;
-			height: 986px;
-			flex-shrink: 0;
-			background-image: url('../images/about-graphic.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;
-		}
-		.about-graphic-background {
-			position: absolute;
-			display: flex;
-			z-index: 1;
-			width: 938px;
-			height: 938px;
-			flex-shrink: 0;
-			background-image: url('../images/rings.svg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;
-		}
-	}
-}
-.game-play-container {
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 0;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 147px;
-	#game-play-section-title {
-		color: var(--Purple);
-		text-align: center;
-		font-family: 'Poppins';
-		font-size: var(--title);
-		font-style: normal;
-		font-weight: 500;
-		line-height: 115%; /* 20.7px */
-		letter-spacing: -0.36px;
-		margin-bottom: var(--readMore);
-	}
-	#game-play-section-sub-title {
-		color: var(--Black);
-		text-align: center;
-		font-family: 'Poppins';
-		font-size: var(--subtitle);
-		font-style: normal;
-		font-weight: 700;
-		line-height: 115%; /* 69px */
-		letter-spacing: -1.2px;
-		margin-bottom: 77px;
-	}
-	.screens-container {
-		display: flex;
-		flex-direction: row;
-		position: relative;
-		width: 1368px;
-		height: 916.356px;
-		.game-screen {
-			display: flex;
-			position: absolute;
-			flex-shrink: 0;
-			background-size: contain;
-			background-repeat: no-repeat;
-		}
-		#screen-one {
-			width: 394.951px;
-			height: 792.356px;
-			flex-shrink: 0;
-			z-index: 1;
-			background-image: url('../images/game_play_1.png');
-			left: 0px;
-			top: 102px;
-		}
-		#screen-two {
-			width: 401px;
-			height: 795px;
-			flex-shrink: 0;
-			z-index: 5;
-			background-image: url('../images/game_play_2.png');
-			left: 273px;
-			top: 51px;
-		}
-		#screen-three {
-			width: 385px;
-			height: 811px;
-			flex-shrink: 0;
-			z-index: 10;
-			background-image: url('../images/game_play_3.png');
-			left: 474px;
-			top: 0;
-		}
-		#screen-four {
-			width: 365px;
-			height: 799px;
-			flex-shrink: 0;
-			z-index: 5;
-			background-image: url('../images/game_play_4.png');
-			left: 768px;
-			top: 51px;
-		}
-		#screen-five {
-			width: 356.469px;
-			height: 797.569px;
-			flex-shrink: 0;
-			z-index: 1;
-			background-image: url('../images/game_play_5.png');
-			left: 1011px;
-			top: 102px;
-		}
-	}
-}
-.blog-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 1320px;
-	margin-left: 300px;
-	margin-bottom: 79px;
-	#blog-section-title {
-		color: var(--Purple);
-		text-align: center;
-		font-family: 'Poppins';
-		font-size: var(--title);
-		font-style: normal;
-		font-weight: 500;
-		line-height: 115%; /* 20.7px */
-		letter-spacing: -0.36px;
-		margin-bottom: 14px;
-	}
-	#blog-section-subtitle {
-		color: var(--Black);
-		text-align: center;
-		font-family: 'Poppins';
-		font-size: var(--subtitle);
-		font-style: normal;
-		font-weight: 700;
-		line-height: 115%; /* 69px */
-		letter-spacing: -1.2px;
-		margin-bottom: 17px;
-	}
-	#blog-section-desc {
-		color: var(--Gray);
-		text-align: center;
-		font-family: 'Poppins';
-		width: 1044px;
-		height: 69px;
-		flex-shrink: 0;
-		font-size: var(--article);
-		font-style: normal;
-		font-weight: 400;
-		line-height: 168.5%; /* 26.96px */
-		letter-spacing: -0.64px;
-		margin-bottom: 77px;
-	}
-	.recent-blog-articles-container {
-		display: flex;
-		flex-direction: row;
-		position: relative;
-		width: 1320px;
-		justify-content: space-between;
-		.article {
-			width: 636px;
-			height: 640px;
+			flex-direction: row;
 			position: relative;
-			flex-shrink: 0;
-			background-color: var(--White);
-			border-radius: 20px;
-			border: 1px solid #ccc;
-			background: var(--White);
-			cursor: pointer;
-			.article-featured-image {
-				position: relative;
+			width: 1320px;
+			justify-content: space-between;
+			.article {
 				width: 636px;
-				height: 300px;
+				height: 640px;
+				position: relative;
 				flex-shrink: 0;
-				border-radius: 20px 20px 0px 0px;
-				background: var(--LGray);
-				margin-bottom: 60px;
-				.article-date {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					position: absolute;
-					top: 276.91px;
-					left: 51px;
-					width: 169.877px;
-					height: 43.938px;
-					flex-shrink: 0;
-					border-radius: 31px;
-					background: var(--Purple);
-					color: var(--White);
-					text-align: center;
-					font-family: 'Roboto', roboto;
-					font-size: var(--articleDate);
-					font-style: normal;
-					font-weight: 700;
-					line-height: 115%; /* 23px */
-					letter-spacing: -0.4px;
-				}
-			}
-			.article-text-container {
-				display: flex;
-				flex-direction: column;
-				padding-left: 51px;
-				.article-title {
-					width: 438px;
-					height: 75px;
-					flex-shrink: 0;
-					color: var(--Black);
-					font-family: 'Poppins';
-					font-size: var(--articleTitle);
-					font-style: normal;
-					font-weight: 600;
-					line-height: 115%; /* 34.5px */
-					letter-spacing: -0.6px;
-					margin-bottom: 17px;
-				}
-				.article-snippet {
-					width: 519px;
-					height: 83px;
-					flex-shrink: 0;
-					color: var(--Gray);
-					font-family: 'Poppins';
-					font-size: var(--article);
-					font-style: normal;
-					font-weight: 400;
-					line-height: 168.5%; /* 26.96px */
-					letter-spacing: -0.64px;
-					margin-bottom: 33.71px;
-				}
-				.article-read-more {
-					width: 105.655px;
-					height: 17.371px;
-					flex-shrink: 0;
-					color: var(--Black);
-					font-family: 'Poppins';
-					font-size: var(--readMore);
-					font-style: normal;
-					font-weight: 500;
-					line-height: 115%; /* 18.4px */
-					letter-spacing: -0.32px;
-				}
-			}
-			.article-shadow {
-				display: none;
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				flex-shrink: 0;
+				background-color: var(--White);
 				border-radius: 20px;
 				border: 1px solid #ccc;
-				bottom: -4px;
-				background: var(--Purple);
-				box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+				background: var(--White);
+				cursor: pointer;
+				.article-featured-image {
+					position: relative;
+					width: 636px;
+					height: 300px;
+					flex-shrink: 0;
+					border-radius: 20px 20px 0px 0px;
+					background: var(--LGray);
+					margin-bottom: 60px;
+					.article-date {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						top: 276.91px;
+						left: 51px;
+						width: 169.877px;
+						height: 43.938px;
+						flex-shrink: 0;
+						border-radius: 31px;
+						background: var(--Purple);
+						color: var(--White);
+						text-align: center;
+						font-family: 'Roboto', roboto;
+						font-size: var(--articleDate);
+						font-style: normal;
+						font-weight: 700;
+						line-height: 115%; /* 23px */
+						letter-spacing: -0.4px;
+					}
+				}
+				.article-text-container {
+					display: flex;
+					flex-direction: column;
+					padding-left: 51px;
+					.article-title {
+						width: 438px;
+						height: 75px;
+						flex-shrink: 0;
+						color: var(--Black);
+						font-family: 'Poppins';
+						font-size: var(--articleTitle);
+						font-style: normal;
+						font-weight: 600;
+						line-height: 115%; /* 34.5px */
+						letter-spacing: -0.6px;
+						margin-bottom: 17px;
+					}
+					.article-snippet {
+						width: 519px;
+						height: 83px;
+						flex-shrink: 0;
+						color: var(--Gray);
+						font-family: 'Poppins';
+						font-size: var(--article);
+						font-style: normal;
+						font-weight: 400;
+						line-height: 168.5%; /* 26.96px */
+						letter-spacing: -0.64px;
+						margin-bottom: 33.71px;
+					}
+					.article-read-more {
+						width: 105.655px;
+						height: 17.371px;
+						flex-shrink: 0;
+						color: var(--Black);
+						font-family: 'Poppins';
+						font-size: var(--readMore);
+						font-style: normal;
+						font-weight: 500;
+						line-height: 115%; /* 18.4px */
+						letter-spacing: -0.32px;
+					}
+				}
+				.article-shadow {
+					display: none;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					flex-shrink: 0;
+					border-radius: 20px;
+					border: 1px solid #ccc;
+					bottom: -4px;
+					background: var(--Purple);
+					box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+				}
 			}
-		}
-		.article.active {
-			.article-shadow {
-				display: block;
-				z-index: -1;
+			.article.active {
+				.article-shadow {
+					display: block;
+					z-index: -1;
+				}
 			}
 		}
 	}
@@ -998,7 +1000,6 @@ footer {
 		footer {
 			flex: 0 0 100%;
 			.footer-top {
-				height: 355px;
 				margin: 82px 10% 0;
 				.mindazzle-footer-sect {
 					display: flex;
@@ -1280,7 +1281,6 @@ footer {
 		footer {
 			flex: 0 0 100%;
 			.footer-top {
-				height: 355px;
 				margin: 82px 10% 0;
 				.mindazzle-footer-sect {
 					display: flex;
@@ -1704,7 +1704,6 @@ footer {
 		footer {
 			flex: 0 0 100%;
 			.footer-top {
-				height: 355px;
 				margin: 82px 10% 0;
 				.mindazzle-footer-sect {
 					display: flex;
@@ -1724,14 +1723,6 @@ footer {
 						#combined-socials {
 							width: 244px;
 							height: 46px;
-						}
-						#facebook {
-						}
-						#twitter {
-						}
-						#pinterest {
-						}
-						#instagram {
 						}
 					}
 				}
@@ -1762,8 +1753,6 @@ footer {
 	}
 	@media (max-width: 1069px) {
 		main {
-			.portfolio {
-			}
 			.game-play-container {
 				margin: 0 5%;
 				margin-bottom: 147px;
@@ -1795,7 +1784,224 @@ footer {
 			}
 		}
 	}
-	@media (max-width: 648px) {
+	@media (max-width: 960px) {
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 40%;
+					.call-to-action-title {
+						width: 100%;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					width: 70%;
+					height: 700px;
+					.game-two-container {
+						width: 90%;
+						height: 600px;
+						background-size: contain;
+						left: -25%;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 90%;
+						height: 550px;
+						left: 10%;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+			.game-play-container {
+				margin: 0 5%;
+				margin-bottom: 147px;
+				#game-play-section-title {
+					margin-bottom: 16px;
+				}
+				#game-play-section-sub-title {
+					margin-bottom: 77px;
+				}
+				.screens-container {
+					width: 100%;
+					height: 500px;
+					#screen-two {
+						left: 10%;
+						top: 51px;
+						width: 35%;
+						height: 500px;
+						background-size: contain;
+					}
+					#screen-three {
+						left: 35%;
+						top: 0;
+						width: 32%;
+						height: 500px;
+						background-size: contain;
+					}
+					#screen-four {
+						left: auto;
+						right: 10%;
+						top: 51px;
+						width: 32%;
+						height: 500px;
+						background-size: contain;
+					}
+				}
+			}
+		}
+		footer {
+			.footer-top {
+				margin: 82px 5% 0;
+				flex-wrap: wrap;
+				justify-content: center;
+				height: auto;
+				.mindazzle-footer-sect {
+					display: flex;
+					flex-direction: column;
+					flex: 3;
+					height: auto;
+					flex-shrink: 0;
+					.logo {
+						margin-bottom: 26px;
+					}
+					#footer-mission-statement {
+						margin-bottom: 24px;
+					}
+					.socials {
+						width: 244px;
+						height: 46px;
+						#combined-socials {
+							width: 244px;
+							height: 46px;
+						}
+					}
+				}
+				.useful-links {
+					flex: 2;
+					margin: 30px 5%;
+					.footer-link-container {
+					}
+				}
+				.support-links {
+					flex: 2;
+					margin: 30px 5%;
+					.footer-link-container {
+					}
+				}
+				.footer-contact-info {
+					flex: 2;
+					margin: 30px 5%;
+				}
+			}
+			.footer-bottom {
+				display: flex;
+				justify-content: center;
+				margin: 0 10% 15px;
+			}
+		}
+	}
+	@media (max-width: 796px) {
+		main {
+			.portfolio {
+				width: 90%;
+				height: 500;
+				margin: 0 5%;
+				align-items: center;
+				flex-shrink: 0;
+				.portfolio-header {
+					margin-bottom: 27px;
+					#portfolio-title {
+						margin-bottom: 17px;
+					}
+					#portfolio-title-desc {
+						width: 90%;
+						text-align: justify-center;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 769px) {
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 40%;
+					.call-to-action-title {
+						width: 100%;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					width: 70%;
+					height: 700px;
+					.game-two-container {
+						width: 90%;
+						height: 600px;
+						background-size: contain;
+						left: -20%;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 90%;
+						height: 550px;
+						left: 6%;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 698px) {
 		nav {
 			.nav-sub-container {
 				position: relative;
@@ -1824,6 +2030,259 @@ footer {
 						.link.active {
 							color: var(--Purple);
 						}
+					}
+				}
+			}
+		}
+		main {
+			.call-to-action-container {
+				margin-left: 10%;
+				height: auto;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 80%;
+					.call-to-action-title {
+						width: 100%;
+					}
+					.call-to-action-buttons {
+						.ios-button {
+							display: flex;
+							align-items: center;
+							width: 230px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							#apple-download-text {
+								margin-left: 50px;
+							}
+						}
+						.android-button {
+							width: 250px;
+							height: 50px;
+							border-radius: 28px;
+							background-position: 25px 12px;
+							margin-left: 20px;
+							#android-download-text {
+								margin-left: 56px;
+							}
+						}
+					}
+				}
+				.game-illustrations {
+					display: none;
+					width: 70%;
+					height: 700px;
+					.game-two-container {
+						width: 90%;
+						height: 600px;
+						background-size: contain;
+						left: -20%;
+					}
+					.game-one-container {
+						position: absolute;
+						width: 90%;
+						height: 550px;
+						left: 6%;
+						top: 20px;
+						background-size: contain;
+					}
+				}
+			}
+			.about {
+				.about-graphic-container {
+					width: 100%;
+					height: 400px;
+					.about-graphic {
+						width: 100%;
+						height: 100%;
+						background-size: contain;
+						background-position: center center;
+					}
+					.about-graphic-background {
+						width: 100%;
+						height: 100%;
+						background-size: contain;
+						background-position: center center;
+					}
+				}
+			}
+			.stats-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 100px;
+				.stats-header {
+					display: flex;
+					color: var(--Purple);
+					text-align: center;
+					font-family: 'Poppins';
+					font-size: var(--title);
+					font-style: normal;
+					font-weight: 500;
+					line-height: 115%; /* 25.3px */
+					margin-bottom: 55px;
+				}
+				.stats {
+					.stats-category {
+						padding: 20px 50px;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 590px) {
+		main {
+			.call-to-action-container {
+				margin: 11px 10% 0;
+				height: auto;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 80%;
+					margin: 0 10px;
+					.call-to-action-title {
+						width: 100%;
+					}
+					.call-to-action-buttons {
+						width: 100%;
+						margin: 46px;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						.download-button {
+							text-align: center;
+						}
+						.ios-button {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							text-align: center;
+							width: 300px;
+							height: 50px;
+							border-radius: 28px;
+							margin: 0 0 14px 0;
+							background-position: 20% 12px;
+							#apple-download-text {
+								margin: 0;
+							}
+						}
+						.android-button {
+							width: 320px;
+							height: 50px;
+							border-radius: 28px;
+							margin: 0;
+							justify-content: center;
+							align-items: center;
+							text-align: center;
+							background-position: 16% 12px;
+							#android-download-text {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+			.stats-container {
+				margin-bottom: 70px;
+				.stats {
+					.stats-category {
+						padding: 20px 30px;
+					}
+				}
+			}
+			.game-play-container {
+				margin: 0 5%;
+				margin-bottom: 147px;
+				#game-play-section-title {
+					margin-bottom: 16px;
+				}
+				#game-play-section-sub-title {
+					margin-bottom: 77px;
+				}
+				.screens-container {
+					width: 100%;
+					height: 300px;
+					.game-screen {
+					}
+					#screen-one {
+						display: none;
+					}
+					#screen-two {
+						left: 10%;
+						top: 51px;
+					}
+					#screen-three {
+						left: 35%;
+						top: 0;
+					}
+					#screen-four {
+						left: auto;
+						right: 10%;
+						top: 51px;
+					}
+					#screen-five {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 490px) {
+		main {
+			.call-to-action-container {
+				margin: 11px 10% 0;
+				height: auto;
+				margin-bottom: 80px;
+				.call-to-action {
+					width: 90%;
+					margin: 0 5%;
+					.call-to-action-title {
+						width: 100%;
+					}
+					.call-to-action-buttons {
+						width: 100%;
+						margin: 46px 0;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						.download-button {
+							text-align: center;
+						}
+						.ios-button {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							text-align: center;
+							width: 260px;
+							height: 50px;
+							border-radius: 28px;
+							margin: 0 0 14px 0;
+							background-position: 20% 12px;
+							#apple-download-text {
+								margin: 0;
+							}
+						}
+						.android-button {
+							width: 280px;
+							height: 50px;
+							border-radius: 28px;
+							margin: 0;
+							justify-content: center;
+							align-items: center;
+							text-align: center;
+							background-position: 16% 12px;
+							#android-download-text {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+			.stats-container {
+				margin-bottom: 50px;
+				.stats {
+					.stats-category {
+						padding: 20px 30px;
 					}
 				}
 			}

@@ -45,8 +45,7 @@ main {
 }
 footer {
 	width: 100%;
-	height: 464px;
-	overflow: hidden;
+	display: flex;
 }
 .hidden {
 	display: none;
@@ -60,9 +59,6 @@ footer {
 			width: 100%;
 		}
 		main {
-			width: 100%;
-		}
-		footer {
 			width: 100%;
 		}
 	}
@@ -82,7 +78,6 @@ footer {
 	}
 	@media (max-width: 960px) {
 		:root {
-			--title: 20px;
 			--subtitle: 45px;
 			--callToActionTitle: 55px;
 			--section: 14px;
@@ -90,6 +85,35 @@ footer {
 			--articleTitle: 24px;
 			--article: 12px;
 			--articleReadMore: 12px;
+			--buttonsText: 16px;
+		}
+	}
+	@media (max-width: 590px) {
+		:root {
+			--title: 18px;
+			--subtitle: 45px;
+			--section: 16px;
+			--articleTitle: 28px;
+			--article: 14px;
+			--callToActionTitle: 50px;
+			--articleDate: 18px;
+			--readMore: 14px;
+			--footerTitles: 18px;
+		}
+	}
+	@media (max-width: 490px) {
+		:root {
+			--title: 16px;
+			--subtitle: 30px;
+			--section: 14px;
+			--articleTitle: 24px;
+			--article: 12px;
+			--callToActionTitle: 35px;
+			--articleDate: 16px;
+			--readMore: 12px;
+			--footerTitles: 16px;
+			--footerLinks: 14px;
+			--buttonsText: 14px;
 		}
 	}
 }
