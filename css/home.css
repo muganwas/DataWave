@@ -180,6 +180,7 @@ main {
 				left: -160px;
 				flex-shrink: 0;
 				background-image: url('../images/phone-2.png');
+				filter: drop-shadow(-15px 30px 10px rgba(90, 34, 139, 0.7));
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
@@ -192,6 +193,7 @@ main {
 				flex-shrink: 0;
 				transform: rotate(50deg);
 				background-image: url('../images/phone-1.png');
+				filter: drop-shadow(-15px 30px 10px rgba(90, 34, 139, 0.7));
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
