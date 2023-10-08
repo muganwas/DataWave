@@ -618,7 +618,8 @@ main {
 					}
 				}
 				.article-shadow {
-					display: none;
+					display: block;
+					opacity: 0;
 					position: absolute;
 					left: 0;
 					right: 0;
@@ -633,8 +634,10 @@ main {
 			}
 			.article.active {
 				.article-shadow {
+					opacity: 1;
 					display: block;
 					z-index: -1;
+					animation: fadeInSlideShadow 1s;
 				}
 			}
 		}
