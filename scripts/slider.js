@@ -3,34 +3,7 @@
     const next = doc.getElementById('right-nav-button');
     const articles = doc.getElementsByClassName('article');
     const slides = doc.getElementsByClassName('slide-container');
-    back.addEventListener('click', function (e) {
-        e.preventDefault();
-        const parent = doc.getElementById('slides');
-        const slideContainers = doc.getElementsByClassName('slide-container');
-        for (let i = 0; i < slideContainers.length; i++) {
-            const slideContainer = slideContainers[i];
-            const lastSibling = Array.from(slideContainers).pop();
-            const prevSibling = slideContainer.previousElementSibling;
-            if (slideContainer.classList.contains('active') && prevSibling) {
-                slideContainer.classList.remove('active');
-                prevSibling.classList.add('active');
-                const prevNodeChildren = prevSibling.children;
-                const slideContainerChildren = slideContainer.children;
-                Array.from(slideContainerChildren).forEach(el => {
-                    if (el.classList.contains('portfolio-slide')) {
-                        el.classList.remove('active');
-                    }
-                });
-                Array.from(prevNodeChildren).forEach(el => {
-                    if (el.classList.contains('portfolio-slide')) {
-                        el.classList.add('active');
-                    }
-                });
-                parent.insertBefore(lastSibling, prevSibling);
-            }
-        }
-    });
-    next.addEventListener('click', function (e) {
+    const nextFunc = function (e) {
         e.preventDefault();
         const slideContainers = doc.getElementsByClassName('slide-container');
         for (let i = 0; i < slideContainers.length; i++) {
@@ -57,7 +30,36 @@
                 slideContainer.after(nextSibling);
             }
         }
-    });
+    }
+    // const backFunc = function (e) {
+    //     e.preventDefault();
+    //     const parent = doc.getElementById('slides');
+    //     const slideContainers = doc.getElementsByClassName('slide-container');
+    //     for (let i = 0; i < slideContainers.length; i++) {
+    //         const slideContainer = slideContainers[i];
+    //         const lastSibling = Array.from(slideContainers).pop();
+    //         const prevSibling = slideContainer.previousElementSibling;
+    //         if (slideContainer.classList.contains('active') && prevSibling) {
+    //             slideContainer.classList.remove('active');
+    //             prevSibling.classList.add('active');
+    //             const prevNodeChildren = prevSibling.children;
+    //             const slideContainerChildren = slideContainer.children;
+    //             Array.from(slideContainerChildren).forEach(el => {
+    //                 if (el.classList.contains('portfolio-slide')) {
+    //                     el.classList.remove('active');
+    //                 }
+    //             });
+    //             Array.from(prevNodeChildren).forEach(el => {
+    //                 if (el.classList.contains('portfolio-slide')) {
+    //                     el.classList.add('active');
+    //                 }
+    //             });
+    //             prevSibling.before(lastSibling);
+    //         }
+    //     }
+    // }
+    back.addEventListener('click', nextFunc);
+    next.addEventListener('click', nextFunc);
     for (let i = 0; i < articles.length; i++) {
         const article = articles[i];
         article.addEventListener('click', function (e) {

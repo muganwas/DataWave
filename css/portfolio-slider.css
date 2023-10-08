@@ -17,18 +17,24 @@
 	}
 	.slides {
 		display: flex;
+		overflow: hidden;
+		padding: 0 10px 50px;
+		background-color: var(--White);
 		.slide-container {
 			display: flex;
 			position: relative;
 			margin-right: 78px;
+			opacity: 0.8;
 			width: 388px;
 			height: 465px;
 			flex-shrink: 0;
 			justify-content: center;
+			cursor: pointer;
 			.portfolio-slide {
 				display: flex;
 				position: absolute;
-				z-index: 10;
+				z-index: 100;
+				opacity: 0.8;
 				flex-direction: column;
 				align-items: center;
 				flex-shrink: 0;
@@ -37,6 +43,7 @@
 				border-radius: 20px;
 				border: 1px solid #ccc;
 				background-color: var(--White);
+				animation: fadeInSlide 0.3s;
 				//box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
 				.slide-image-container {
 					display: flex;
@@ -102,16 +109,15 @@
 			}
 			.portfolio-slide-shadow {
 				position: absolute;
-				//display: block;
-				display: none;
+				display: block;
+				opacity: 0;
 				bottom: -5px;
 				z-index: 1;
 				width: 388px;
 				height: 465px;
 				flex-shrink: 0;
 				border-radius: 20px;
-				background: var(--Black);
-				//box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+				background: var(--White);
 			}
 			.portfolio-slide-layover {
 				position: absolute;
@@ -127,6 +133,8 @@
 				//box-shadow: 0px 4px 5px 0px rgba(255, 255, 255, 0.15);
 			}
 			.portfolio-slide.active {
+				opacity: 1;
+				animation: fadeInSlide 0.8s;
 				.slide-title {
 					color: var(--Purple);
 				}
@@ -136,9 +144,16 @@
 			}
 		}
 		.slide-container.active {
+			opacity: 1;
+			//animation: fadeIn 1s;
+			.portfolio-slide {
+				z-index: 100;
+				animation: fadeInSlide 0.8s;
+			}
 			.portfolio-slide-shadow {
 				position: absolute;
 				display: block;
+				opacity: 1;
 				bottom: -5px;
 				z-index: 1;
 				width: 388px;
@@ -147,9 +162,14 @@
 				border-radius: 20px;
 				background: var(--Purple);
 				box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+				animation: fadeInSlideShadow 2s;
 			}
 			.portfolio-slide-layover {
 				display: none;
+			}
+			.portfolio-slide.active {
+				opacity: 1;
+				animation: fadeInSlide 0.8s;
 			}
 		}
 		.slide-container:last-of-type {

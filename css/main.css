@@ -22,6 +22,53 @@
 	--buttonsText: 20px;
 }
 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeInSlide {
+	from {
+		opacity: 0.5;
+		right: -50px;
+	}
+
+	to {
+		opacity: 1;
+		right: 0px;
+	}
+}
+@keyframes fadeInSlideShadow {
+	from {
+		opacity: 0.5;
+		bottom: -10px;
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+		background-color: var(--White);
+	}
+
+	to {
+		opacity: 1;
+		bottom: -5px;
+		box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+		background-color: var(--Purple);
+	}
+}
+@keyframes fadeInShadow {
+	from {
+		opacity: 0;
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+	}
+}
+
 body {
 	background-image: url('../images/home_background.svg');
 	background-repeat: no-repeat;
