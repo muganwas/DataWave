@@ -9,11 +9,11 @@
 		cursor: pointer;
 	}
 	#left-nav-button {
-		background-image: url('../images/play_alt.svg');
+		background-image: url('../images/play.svg');
 		transform: rotate(180deg);
 	}
 	#right-nav-button {
-		background-image: url('../images/play_alt.svg');
+		background-image: url('../images/play.svg');
 	}
 	.slides {
 		display: flex;

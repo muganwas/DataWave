@@ -31,6 +31,14 @@
 		opacity: 1;
 	}
 }
+@keyframes bounce {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 5px;
+	}
+}
 @keyframes fadeInSlide {
 	from {
 		opacity: 0.5;
@@ -71,6 +79,7 @@
 
 body {
 	background-image: url('../images/home_background.svg');
+	position: relative;
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: flex;
@@ -79,10 +88,10 @@ body {
 	padding: 0;
 	margin: 0;
 }
-nav {
+/* nav {
 	width: 1506px;
 	height: 51px;
-}
+} */
 main {
 	display: flex;
 	flex-direction: column;

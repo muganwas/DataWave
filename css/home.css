@@ -19,16 +19,25 @@ a:hover {
 }
 nav {
 	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: var(--White);
 	flex-direction: column;
-	margin-top: 41px;
-	margin-left: 101px;
-	margin-right: 313px;
+	justify-conent: center;
+	align-items: center;
+	width: 100%;
 	.nav-sub-container {
 		display: flex;
 		flex-direction: row;
 		flex-shrink: 0;
 		justify-content: space-between;
 		align-items: center;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 1262px;
 		#hamburger {
 			display: flex;
 			width: 24px;
@@ -66,11 +75,11 @@ main {
 	.call-to-action-container {
 		display: flex;
 		flex-direction: row;
-		margin-top: 86px;
+		margin-top: 150px;
+		margin-bottom: 600px;
 		margin-left: 193px;
 		align-items: center;
 		height: 700px;
-		margin-bottom: 300px;
 		.call-to-action {
 			display: flex;
 			flex-direction: column;
@@ -187,6 +196,8 @@ main {
 				flex-shrink: 0;
 				background-image: url('../images/phone-2.png');
 				filter: drop-shadow(-15px 30px 10px rgba(90, 34, 139, 0.7));
+				animation: bounce 0.8s linear infinite alternate;
+				aniamtion-delay: 0.4s;
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
@@ -200,6 +211,8 @@ main {
 				transform: rotate(50deg);
 				background-image: url('../images/phone-1.png');
 				filter: drop-shadow(-15px 30px 10px rgba(90, 34, 139, 0.7));
+				animation: bounce 0.8s linear infinite alternate;
+				animation-delay: 1s;
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
@@ -704,12 +717,12 @@ footer {
 				}
 			}
 		}
-		.useful-links {
+		.mindazle-links {
 			display: flex;
 			flex-direction: column;
 			width: 160px;
 			margin-left: 200px;
-			#useful-links-title {
+			#mindazle-links-title {
 				color: var(--White);
 				font-family: 'Poppins';
 				font-size: var(--footerTitles);
@@ -733,12 +746,12 @@ footer {
 				}
 			}
 		}
-		.support-links {
+		.reviews-links {
 			display: flex;
 			flex-direction: column;
 			width: 160px;
 			margin-left: 99px;
-			#support-links-title {
+			#reviews-links-title {
 				color: var(--White);
 				font-family: 'Poppins';
 				font-style: normal;
@@ -804,17 +817,17 @@ footer {
 @media screen {
 	@media (max-width: 1919px) {
 		nav {
-			margin-top: 41px;
+			//margin-top: 41px;
 			margin-left: 0px;
 			margin-right: 0px;
 			.nav-sub-container {
-				margin: 0 5%;
+				//margin: 0 5%;
 			}
 		}
 		main {
 			.call-to-action-container {
 				margin-left: 10%;
-				margin-bottom: 80px;
+				margin-bottom: 400px;
 				.call-to-action {
 					width: 40%;
 					.call-to-action-title {
@@ -1041,11 +1054,11 @@ footer {
 						}
 					}
 				}
-				.useful-links {
+				.mindazle-links {
 					width: 160px;
 					margin-left: 200px;
 				}
-				.support-links {
+				.reviews-links {
 					width: 160px;
 					margin-left: 99px;
 					.footer-link-container {
@@ -1065,11 +1078,12 @@ footer {
 	}
 	@media (max-width: 1490px) {
 		nav {
-			margin-top: 41px;
+			//margin-top: 41px;
 			margin-left: 0px;
 			margin-right: 0px;
 			.nav-sub-container {
-				margin: 0 5%;
+				//margin: 0 5%;
+				width: 80%;
 			}
 		}
 		main {
@@ -1322,13 +1336,13 @@ footer {
 						}
 					}
 				}
-				.useful-links {
+				.mindazle-links {
 					flex: 2;
-					margin-left: 5%;
+					margin-left: 10%;
 					.footer-link-container {
 					}
 				}
-				.support-links {
+				.reviews-links {
 					flex: 2;
 					width: 160px;
 					margin-left: 5%;
@@ -1492,11 +1506,11 @@ footer {
 	}
 	@media (max-width: 1124px) {
 		nav {
-			margin-top: 41px;
+			//margin-top: 41px;
 			margin-left: 0px;
 			margin-right: 0px;
 			.nav-sub-container {
-				margin: 0 5%;
+				//margin: 0 5%;
 			}
 		}
 		main {
@@ -1737,13 +1751,13 @@ footer {
 						}
 					}
 				}
-				.useful-links {
+				.mindazle-links {
 					flex: 2;
 					margin-left: 5%;
 					.footer-link-container {
 					}
 				}
-				.support-links {
+				.reviews-links {
 					flex: 2;
 					width: 160px;
 					margin-left: 5%;
@@ -1897,6 +1911,7 @@ footer {
 					flex: 3;
 					height: auto;
 					flex-shrink: 0;
+					margin-bottom: 50px;
 					.logo {
 						margin-bottom: 26px;
 					}
@@ -1912,13 +1927,15 @@ footer {
 						}
 					}
 				}
-				.useful-links {
+				.mindazle-links {
 					flex: 2;
-					margin: 30px 5%;
+					margin: 0 5%;
+					margin-left: 10;
 					.footer-link-container {
 					}
 				}
-				.support-links {
+				.reviews-links {
+					display: none;
 					flex: 2;
 					margin: 30px 5%;
 					.footer-link-container {
@@ -1926,7 +1943,7 @@ footer {
 				}
 				.footer-contact-info {
 					flex: 2;
-					margin: 30px 5%;
+					margin: 0 5%;
 				}
 			}
 			.footer-bottom {
@@ -2014,6 +2031,12 @@ footer {
 	}
 	@media (max-width: 698px) {
 		nav {
+			background-color: rgba(255, 255, 255, 0);
+			background-image: url('../images/home_background.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: var(--White);
+			//background-position: top right;
 			.nav-sub-container {
 				position: relative;
 				#hamburger {
@@ -2046,10 +2069,11 @@ footer {
 			}
 		}
 		main {
+			margin-top: 50px;
 			.call-to-action-container {
 				margin-left: 10%;
-				height: auto;
 				margin-bottom: 80px;
+				height: auto;
 				.call-to-action {
 					width: 80%;
 					.call-to-action-title {
@@ -2143,7 +2167,14 @@ footer {
 		}
 	}
 	@media (max-width: 590px) {
+		nav {
+			.nav-sub-container {
+				width: 90%;
+				margin: 25px 5%;
+			}
+		}
 		main {
+			margin-top: 150px;
 			.call-to-action-container {
 				margin: 11px 10% 0;
 				height: auto;
@@ -2240,6 +2271,7 @@ footer {
 	}
 	@media (max-width: 490px) {
 		main {
+			margin-top: 150px;
 			.call-to-action-container {
 				margin: 11px 10% 0;
 				height: auto;
