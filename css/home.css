@@ -1092,7 +1092,7 @@ footer {
 			}
 		}
 	}
-	@media (max-width: 1490px) {
+	@media (max-width: 1600px) {
 		nav {
 			//margin-top: 41px;
 			margin-left: 0px;
@@ -1174,7 +1174,7 @@ footer {
 				}
 			}
 			.about {
-				height: 1106px;
+				height: auto;
 				margin-left: 10%;
 				.about-text-container {
 					flex: 1;
