@@ -17,6 +17,14 @@ a:hover {
 		color: var(--Purple);
 	}
 }
+.logo.navigation {
+	position: absolute;
+	background-image: url('../images/rings.svg');
+	background-size: 100%;
+	background-position: 20% 100%;
+	background-repeat: no-repeat;
+	padding: 30px;
+}
 nav {
 	display: flex;
 	position: fixed;
