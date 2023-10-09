@@ -10,6 +10,7 @@ a:hover {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	cursor: pointer;
 	.mind {
 		color: black;
 	}
