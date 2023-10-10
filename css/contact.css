@@ -4,6 +4,10 @@ main {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		background-image: url('../images/rings.svg');
+		background-position: 150% 500%;
+		background-size: 50%;
+		background-repeat: no-repeat;
 		.contact-sub-container {
 			display: flex;
 			flex-direction: column;
@@ -30,7 +34,13 @@ main {
 				width: 416px;
 				margin-bottom: 39px;
 				.text {
+					color: var(--Black);
+					font-family: 'Poppins';
+					font-weight: 400;
+					line-height: normal;
+					box-sizing: border-box;
 					border-radius: 6px;
+					padding: 16px;
 					border: 1px solid #d6d6d6;
 					font-size: var(--section);
 					background: var(--White);

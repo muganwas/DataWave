@@ -3,6 +3,10 @@ main {
 		display: flex;
 		flex-direction: row;
 		margin-left: 197px;
+		background-image: url('../images/rings.svg');
+		background-position: -50% -110%;
+		background-size: 50%;
+		background-repeat: no-repeat;
 		.about-us-text {
 			display: flex;
 			width: 986px;
