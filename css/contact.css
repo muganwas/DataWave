@@ -1,0 +1,137 @@
+main {
+	.contact-us {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		.contact-sub-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 645px;
+			height: 496px;
+			flex-shrink: 0;
+			margin-bottom: 357px;
+			#contact-title {
+				color: var(--Black);
+				text-align: center;
+				font-family: Poppins;
+				font-size: var(--subtitle);
+				font-style: normal;
+				font-weight: 700;
+				line-height: 60px; /* 100% */
+				letter-spacing: 0.2px;
+				margin-bottom: 51px;
+			}
+			.contact-inputs {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				width: 416px;
+				margin-bottom: 39px;
+				.text {
+					border-radius: 6px;
+					border: 1px solid #d6d6d6;
+					font-size: var(--section);
+					background: var(--White);
+					box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.28);
+				}
+				.input {
+					width: 189px;
+					height: 56px;
+					flex-shrink: 0;
+				}
+				.area {
+					width: 416px;
+					height: 201px;
+					flex-shrink: 0;
+					margin-top: 38px;
+				}
+				#full-name {
+				}
+				#email {
+				}
+				#message {
+				}
+			}
+			#send-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 200px;
+				height: 64px;
+				flex-shrink: 0;
+				border-radius: 31px;
+				background: var(--Purple);
+				color: var(--White);
+				text-align: center;
+				font-family: 'Poppins';
+				font-size: var(--readMore);
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+		}
+	}
+}
+@media screen {
+	@media (max-width: 1919px) {
+		main {
+			.contact-us {
+				.contact-sub-container {
+					#send-button {
+						width: 150px;
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1600px) {
+		main {
+			.contact-us {
+				.contact-sub-container {
+					margin-bottom: 250px;
+				}
+			}
+		}
+	}
+	@media (max-width: 960px) {
+		main {
+			.contact-us {
+				.contact-sub-container {
+					margin-bottom: 150px;
+				}
+			}
+		}
+	}
+	@media (max-width: 490px) {
+		main {
+			.contact-us {
+				.contact-sub-container {
+					width: 90%;
+					height: 496px;
+					.contact-inputs {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						width: 100%;
+						margin-bottom: 39px;
+						.input {
+							width: 46%;
+						}
+						.area {
+							width: 98%;
+						}
+						#full-name {
+						}
+						#email {
+						}
+						#message {
+						}
+					}
+				}
+			}
+		}
+	}
+}

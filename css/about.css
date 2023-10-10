@@ -23,7 +23,7 @@ main {
 			#about-us-desc {
 				color: var(--Gray);
 				font-family: 'Poppins';
-				font-size: var(--section);
+				font-size: var(--article);
 				font-style: normal;
 				font-weight: 400;
 				line-height: 168.5%; /* 26.96px */
@@ -100,12 +100,14 @@ main {
 			}
 		}
 	}
-	@media (max-width: 1490px) {
+	@media (max-width: 1600px) {
 		main {
 			.about-us {
 				#about-us-illustration {
 					background-size: 98% 99%;
+					height: 800px;
 					#about-graphic-background {
+						height: 800px;
 					}
 				}
 			}
@@ -122,12 +124,9 @@ main {
 					flex: 1;
 					width: 90%;
 					height: 400px;
-					#about-us-read-more {
-					}
 				}
 				#about-us-illustration {
 					width: 100%;
-					height: 400px;
 					background-size: contain;
 					background-position: center center;
 					#about-graphic-background {
@@ -135,6 +134,29 @@ main {
 						height: 100%;
 						background-size: contain;
 						background-position: center center;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 960px) {
+		main {
+			.about-us {
+				#about-us-illustration {
+					#about-graphic-background {
+						width: 100%;
+						height: 95%;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 698px) {
+		main {
+			.about-us {
+				#about-us-illustration {
+					height: 400px;
+					#about-graphic-background {
 					}
 				}
 			}

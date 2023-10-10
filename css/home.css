@@ -4,6 +4,9 @@ a:link {
 a:hover {
 	color: var(--Purple);
 }
+.anchor {
+	margin-bottom: 150px;
+}
 .logo {
 	font-family: 'Poppins';
 	font-size: var(--logo);
